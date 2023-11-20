@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "httpisoservice", 
+    "deployPath": "/usr/lib/systemd/system/", 
+    "enabled": true, 
+    "externalUuid4": "725bfd0b-e760-4ee0-8c48-a4d2675d418c", 
+    "key": "adtpushhttpisoservice", 
+    "name": "ADT Push httpiso.service", 
+    "osCredKey": "linuxrootuser", 
+    "serverKey": "attuneserver", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

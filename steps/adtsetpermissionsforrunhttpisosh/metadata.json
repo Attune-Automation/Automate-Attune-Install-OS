@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "8e6b1c13-7208-44cf-9a88-e7578a78f0af", 
+    "interpreter": 1, 
+    "key": "adtsetpermissionsforrunhttpisosh", 
+    "name": "ADT Set Permissions for run_httpiso.sh", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

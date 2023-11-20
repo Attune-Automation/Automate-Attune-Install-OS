@@ -1,0 +1,10 @@
+
+echo "Create the attune user if it doesn't exist"
+if grep -q attune /etc/passwd
+then
+    echo "Attune user already exists"
+else
+    useradd -m attune
+fi
+
+passwd attune

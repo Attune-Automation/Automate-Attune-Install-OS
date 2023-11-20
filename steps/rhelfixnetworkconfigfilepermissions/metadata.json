@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "1da80492-ef62-412a-b8b8-c264133a7fb5", 
+    "interpreter": 1, 
+    "key": "rhelfixnetworkconfigfilepermissions", 
+    "name": "RHEL Fix Network Config File Permissions", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

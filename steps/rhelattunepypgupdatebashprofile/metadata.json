@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "dfb72d51-f957-4589-9a56-f684312bdaac", 
+    "interpreter": 1, 
+    "key": "rhelattunepypgupdatebashprofile", 
+    "name": "RHEL Attune PYPG Update bash_profile", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

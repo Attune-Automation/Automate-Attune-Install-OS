@@ -1,0 +1,52 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "cf808861-f9a8-462c-8ea4-0146b6efa05a", 
+    "isBlueprint": false, 
+    "key": "installattunev5software", 
+    "links": [
+        {
+            "order": 20, 
+            "stepKey": "rhelattunesasremoveattunerelease"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "rhelattunesasdeployattunev5"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "rhelattunesaskillattune"
+        }, 
+        {
+            "order": 80, 
+            "stepKey": "rhelattunesasremovevirtualenv"
+        }, 
+        {
+            "order": 130, 
+            "stepKey": "rhelattunesascreatevirtualenv"
+        }, 
+        {
+            "order": 180, 
+            "stepKey": "rhelattunesasinstallattune"
+        }, 
+        {
+            "order": 220, 
+            "stepKey": "rhelattunesasstartattuneservice"
+        }, 
+        {
+            "order": 270, 
+            "stepKey": "rhelattuneenableattune"
+        }, 
+        {
+            "order": 320, 
+            "stepKey": "rhelattunesaswaitforattunetomigrate"
+        }, 
+        {
+            "order": 370, 
+            "stepKey": "rhelattunesasremoveattunerelease"
+        }
+    ], 
+    "name": "Install Attune v5 Software", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

@@ -1,0 +1,44 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "6e581aab-bea3-4ccc-8815-bf243953bbe6", 
+    "isBlueprint": false, 
+    "key": "rhelattunesetupdisks", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesdrunpartprobe"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "rhelattunesdsetupvgs"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "rhelattunesdsetuphomelv"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "rhelattunesdsetuptmplv"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "rhelattunesdsetupkickstartlv"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "rhelattunesdsetupbackuplv"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "rhelattunesdsetupdblvs"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "rhelattunesdsetupvar"
+        }
+    ], 
+    "name": "RHEL Attune Setup Disks", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

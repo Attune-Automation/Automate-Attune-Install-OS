@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "9c0f53b7-f713-4e40-987a-4619c1322045", 
+    "interpreter": 1, 
+    "key": "rhelattunesdrunpartprobe", 
+    "name": "RHEL Attune SD Run partprobe", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

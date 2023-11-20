@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "ede56591-c0c3-439a-bc51-7a8ec231503c", 
+    "interpreter": 1, 
+    "key": "adtcheckiftwistdisinstalled", 
+    "name": "ADT Check if twistd is Installed", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

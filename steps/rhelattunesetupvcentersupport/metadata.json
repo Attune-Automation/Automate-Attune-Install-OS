@@ -1,0 +1,28 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "068d4eba-c984-42e0-a1c3-6424c226a834", 
+    "isBlueprint": false, 
+    "key": "rhelattunesetupvcentersupport", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesvcsinstalllibicu"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "rhelattunesvcssetuppowershellv624"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "rhelattunesvcsdeployvmwarepowercliv67"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "rhelattunesvcstestvmwarepowercli"
+        }
+    ], 
+    "name": "RHEL Attune Setup vCenter Support", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

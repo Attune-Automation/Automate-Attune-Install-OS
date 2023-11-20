@@ -1,0 +1,20 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "99795233-cf6d-4c43-9e3f-bb72263d01f8", 
+    "isBlueprint": false, 
+    "key": "rhelattunesetupovirtsupport", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesovsinstallpython3"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "rhelattunesovscreatevirtualenv"
+        }
+    ], 
+    "name": "RHEL Attune Setup oVirt Support", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

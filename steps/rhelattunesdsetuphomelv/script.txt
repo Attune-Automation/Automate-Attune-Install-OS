@@ -1,0 +1,2 @@
+
+lvextend --size 100g --resizefs /dev/rootvg/home

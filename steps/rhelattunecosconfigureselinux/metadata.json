@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "6b57409a-1a22-4cfc-9965-52e5b4d32b4e", 
+    "interpreter": 1, 
+    "key": "rhelattunecosconfigureselinux", 
+    "name": "RHEL Attune COS Configure SELinux", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

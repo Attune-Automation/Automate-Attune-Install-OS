@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "11e94320-ed24-4277-8025-4444e6a891cb", 
+    "interpreter": 1, 
+    "key": "rhelattuneitsinstalltimescaledbtune", 
+    "name": "RHEL Attune ITS Install timescaledb-tune", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

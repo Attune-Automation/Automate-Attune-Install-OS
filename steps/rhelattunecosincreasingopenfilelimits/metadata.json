@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "e5d017e3-794f-44fd-8528-501351b2767a", 
+    "interpreter": 1, 
+    "key": "rhelattunecosincreasingopenfilelimits", 
+    "name": "RHEL Attune COS Increasing Open File Limits", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "209c3948-9e4e-4487-8677-9fdf6486b44c", 
+    "interpreter": 1, 
+    "key": "rhelattunesvcspowershellv624cleanup", 
+    "name": "RHEL Attune SVCSPowershell v6.2.4 Cleanup", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

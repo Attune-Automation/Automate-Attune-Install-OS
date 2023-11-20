@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "runhttpisosh", 
+    "deployPath": "$HOME", 
+    "enabled": true, 
+    "externalUuid4": "d4e8c3d5-9b53-4c35-8957-b7cf5983ae60", 
+    "key": "adtdeployrunhttpisosh", 
+    "name": "ADT Deploy run_httpiso.sh", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneserver", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

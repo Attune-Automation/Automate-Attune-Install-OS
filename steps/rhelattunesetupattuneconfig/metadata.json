@@ -1,0 +1,20 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "b471fe86-b575-4fc1-b610-e2d17e75f0e2", 
+    "isBlueprint": false, 
+    "key": "rhelattunesetupattuneconfig", 
+    "links": [
+        {
+            "order": 50, 
+            "stepKey": "rhelattunesacconfigureattunecfg"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "rhelattunesacconfiguregit"
+        }
+    ], 
+    "name": "RHEL Attune Setup Attune Config", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

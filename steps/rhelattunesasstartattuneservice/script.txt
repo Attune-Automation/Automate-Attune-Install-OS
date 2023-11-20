@@ -1,0 +1,25 @@
+# Check if attune is running
+if pgrep -laf run_attune_server 2>&1 > /dev/null; then
+    echo "Attune is running, it should already be stopped."
+    false
+fi
+
+echo "Removing old logs"
+[ ! -f ~/attune.home/attune.log ] || rm ~/attune.home/attune.log
+
+echo "Restarting PostgreSQL and Attune"
+sudo systemctl restart postgresql-12
+sudo systemctl restart attune
+
+# Wiat for Attune to start
+sleep 20s
+
+# Check if attune is running
+if pgrep -laf run_attune_server 2>&1 > /dev/null; then
+    echo "Attune is running, GREAT."
+else
+    echo "Attune has failed to start" >&2
+    tail -n50 ~/attune.home/attune.log
+    false
+fi
+

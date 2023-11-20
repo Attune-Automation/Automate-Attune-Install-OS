@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "834c4d2c-1476-4acc-93ca-c3e3efa390ad", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "f91c251f-35bc-403d-b4af-178993ed7d70", 
+    "key": "attunev5setupwinpesupportrhel8link", 
+    "name": "Attune v5 Setup WinPE Support RHEL8 (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "2f345751-5de9-43cd-8e33-14156d2d9fbb", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

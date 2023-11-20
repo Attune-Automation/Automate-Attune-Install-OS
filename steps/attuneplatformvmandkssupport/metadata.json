@@ -1,0 +1,32 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "8812dbf2-76a3-4b71-a666-163ea58c37e0", 
+    "isBlueprint": false, 
+    "key": "attuneplatformvmandkssupport", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesetupbootisosupport"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "rhelattunesetupvcentersupport"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "rhelattunesetupovirtsupport"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "rhel8addonhypervsupport"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "attunev5setupwinpesupportrhel8link"
+        }
+    ], 
+    "name": "Attune Platform VM and KS Support", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

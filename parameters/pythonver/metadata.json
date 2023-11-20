@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "84cce281-fb5a-4bda-8f67-b00d3a7d1193", 
+    "key": "pythonver", 
+    "name": "Python Ver", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

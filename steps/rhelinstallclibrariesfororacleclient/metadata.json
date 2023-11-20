@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "0307031a-ab1f-4886-9e79-6e2c5c7460a0", 
+    "interpreter": 1, 
+    "key": "rhelinstallclibrariesfororacleclient", 
+    "name": "RHEL Install C Libraries for Oracle Client", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

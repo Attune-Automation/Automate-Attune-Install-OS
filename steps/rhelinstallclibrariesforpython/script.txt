@@ -1,0 +1,4 @@
+# For the cryptography package
+PKG="libffi-devel readline-devel"
+
+sudo yum install -y $PKG

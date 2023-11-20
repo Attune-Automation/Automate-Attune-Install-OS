@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "29519342-53dd-43eb-a5c0-d90ce2f902e8", 
+    "key": "rpmmirror", 
+    "name": "RPM Mirror", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.LinuxServer"
+}

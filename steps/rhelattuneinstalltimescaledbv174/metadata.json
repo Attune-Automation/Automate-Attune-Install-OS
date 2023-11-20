@@ -1,0 +1,36 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "499e3029-d568-4825-b1ce-7270de298927", 
+    "isBlueprint": false, 
+    "key": "rhelattuneinstalltimescaledbv174", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattuneitsinstallgotoolset"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "rhelattuneitsinstalltimescaledbtune"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "rhelattuneitsaddtimescaledbtunetopath"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "rhelattuneitsdeploytimescaledbv174"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "rhelattuneitsconfigurebuildinstall"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "rhelattuneitstunedb"
+        }
+    ], 
+    "name": "RHEL Attune Install TimescaleDB v1.7.4", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

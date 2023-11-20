@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "offlinepythonpypisforattune", 
+    "deployPath": "/tmp/attune_offline/pypis", 
+    "enabled": true, 
+    "externalUuid4": "78e355e9-8e09-44d8-b26f-81332214955a", 
+    "key": "rhelattuneipdeploypythonpypis", 
+    "name": "RHEL Attune IP Deploy Python PyPIs", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

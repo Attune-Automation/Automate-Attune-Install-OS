@@ -1,0 +1,24 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "68634b04-97aa-4d9c-a331-2070f13902f3", 
+    "isBlueprint": false, 
+    "key": "rhelattunecreatepostgresqldb", 
+    "links": [
+        {
+            "order": 140, 
+            "stepKey": "rhelattunepgdbsetsqlpassword"
+        }, 
+        {
+            "order": 160, 
+            "stepKey": "rhelattunepgdbcreatedatabase"
+        }, 
+        {
+            "order": 180, 
+            "stepKey": "rhelattunepgdbcleanuppsql"
+        }
+    ], 
+    "name": "RHEL Attune Create Postgresql DB", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

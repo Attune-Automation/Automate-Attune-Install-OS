@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "powershellv624", 
+    "deployPath": "/tmp/attune_deploy_rpm_rhelattunesvcsinstallpowershellv624", 
+    "enabled": true, 
+    "externalUuid4": "a8f85c9b-ed0e-42ca-b018-aff820e45ce2", 
+    "key": "rhelattunesvcspowershellv624deploy", 
+    "name": "RHEL Attune SVCSPowershell v6.2.4 Deploy", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

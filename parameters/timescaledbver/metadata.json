@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "6262fbc2-956f-49ad-8abb-d137d8a81e62", 
+    "key": "timescaledbver", 
+    "name": "TimescaleDB Ver", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

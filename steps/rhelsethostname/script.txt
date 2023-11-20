@@ -1,0 +1,5 @@
+echo "{attuneNode.hostname}" > /etc/hostname
+
+hostname "{attuneNode.hostname}"
+
+cat /etc/hostname

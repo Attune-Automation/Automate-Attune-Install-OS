@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "f4f04320-66d0-4339-8321-7a75a2cb4c32", 
+    "interpreter": 1, 
+    "key": "rhelinstallclibrariesforlxml", 
+    "name": "RHEL Install C Libraries for lxml", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

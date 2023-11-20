@@ -1,0 +1,44 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "62f44adb-01c9-4f42-8c89-b933e4816b51", 
+    "isBlueprint": false, 
+    "key": "setupattuneplatform", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesetupdisks"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "rhelattunesetuposprerequisites"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "rhelattuneconfigureos"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "rhelattunesetupattuneuser"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "rhelattuneinstallsrcpythonpostgresql"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "rhelattunecreatepostgresqldb"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "rhelattunesetupattuneconfig"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "attuneplatformvmandkssupport"
+        }
+    ], 
+    "name": "Setup Attune Platform", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

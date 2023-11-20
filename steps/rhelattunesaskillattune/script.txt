@@ -1,0 +1,9 @@
+sudo systemctl stop attune || true
+
+if pgrep -laf run_attune_server 2>&1 > /dev/null; then
+    echo "Killing Attune"
+    pkill -9 -f run_attune_server
+else
+    echo "Attune has stopped"
+fi
+    

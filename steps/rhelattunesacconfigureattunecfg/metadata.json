@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "23ac7e44-a7c2-4897-afd7-ff2f46577c4d", 
+    "interpreter": 1, 
+    "key": "rhelattunesacconfigureattunecfg", 
+    "name": "RHEL Attune SAC Configure Attune CFG", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

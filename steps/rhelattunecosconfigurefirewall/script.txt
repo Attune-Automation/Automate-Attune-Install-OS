@@ -1,0 +1,11 @@
+echo "Removing the default rules from the RHEL6 firewall"
+iptables -F INPUT
+
+echo "" > /etc/sysconfig/iptables
+
+echo "Configure firewall port forwards:"
+sudo firewall-cmd --add-forward-port=port=80:proto=tcp:toport=8000
+sudo firewall-cmd --add-forward-port=port=443:proto=tcp:toport=8001
+sudo firewall-cmd --runtime-to-permanent
+
+sudo firewall-cmd --list-forward-ports

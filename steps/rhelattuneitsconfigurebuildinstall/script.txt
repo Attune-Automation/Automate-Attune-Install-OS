@@ -1,0 +1,28 @@
+ATTUNE_TSDB_VER={timescaledbVer}
+
+export CPPFLAGS=`pg_config --cppflags`
+export LDFLAGS=`pg_config --ldflags`
+
+#tar xzf timescaledb-${ATTUNE_TSDB_VER}.tar.gz
+
+SRC_DIR="$HOME/timescaledb-${ATTUNE_TSDB_VER}"
+
+cd ${SRC_DIR}
+
+
+# Bootstrap the build system
+./bootstrap
+
+# To build the extension
+cd build && make
+
+# To install
+make install
+
+cd $HOME
+
+#sudo rpm -iv timescaledb-tools*rpm
+
+echo "cleanup installation files!"
+
+rm -rf timescaledb*

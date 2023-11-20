@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "c03def97-249e-4163-8dc8-9e81b46f175a", 
+    "interpreter": 1, 
+    "key": "rhelattunestartpostgresql", 
+    "name": "RHEL Attune Start PostgreSQL", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

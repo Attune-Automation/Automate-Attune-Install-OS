@@ -1,0 +1,20 @@
+cat <<"EOF">> ~/.bash_profile
+
+##### SET THE ATTUNE ENVIRONMENT #####
+# Setup the variables for PYTHON and POSTGRESQL
+export ATTUNE_PY_VER="{pythonVer}"
+export ATTUNE_PG_VER="{postgresqlVer}"
+export ATTUNE_CMAKE_VER="{cmakeVer}"
+export ATTUNE_TSDB_VER="{timescaledbVer}"
+
+export PATH="$HOME/opt/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/opt/lib:$LD_LIBRARY_PATH"
+
+# Set the variables for the platform release
+# These are updated by the deploy script
+export ATTUNE_ENV="~/python"
+[ -n "${ATTUNE_ENV}" ] && export PATH="${ATTUNE_ENV}/bin:$PATH"
+EOF
+
+echo "~/.bash_profile:"
+cat ~/.bash_profile

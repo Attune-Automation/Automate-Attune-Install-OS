@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "45cd7286-61c3-4d9e-ab7e-a271ba2f6aeb", 
+    "interpreter": 1, 
+    "key": "rhelattunesaswaitforattunetomigrate", 
+    "name": "RHEL Attune SAS Wait for Attune to Migrate", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

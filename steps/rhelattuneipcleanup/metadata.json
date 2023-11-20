@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "a1d01e9c-ac0f-427b-b517-b2d68d549845", 
+    "interpreter": 1, 
+    "key": "rhelattuneipcleanup", 
+    "name": "RHEL Attune IP Cleanup", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

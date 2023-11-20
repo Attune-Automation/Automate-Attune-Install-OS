@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "e3fc5f08-2567-47b5-921e-10af35afeb7b", 
+    "key": "workeruser", 
+    "name": "Worker User", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.LinOsCred"
+}

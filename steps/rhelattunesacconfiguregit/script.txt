@@ -1,0 +1,4 @@
+git config --global user.email "attune@{attuneNode.fqn}"
+git config --global user.name "Attune"
+
+git config -l

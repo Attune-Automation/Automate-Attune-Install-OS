@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "dba4d85b-5336-4b20-87e6-040ca95401e0", 
+    "fileName": "attune_release_el7_0.0.0+b858118349.tar.bz2", 
+    "formatKey": "tar.bz2", 
+    "key": "attunereleasev5", 
+    "md5": "484ef3418393e082527edf0aa6ae8382", 
+    "name": "Attune Release v5", 
+    "remoteUri": null, 
+    "size": 114265413, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

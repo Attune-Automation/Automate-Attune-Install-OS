@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "e388ce6c-027f-49f1-8ab9-2ff8995cce3b", 
+    "interpreter": 1, 
+    "key": "rhelattuneipginstallservicefile", 
+    "name": "RHEL Attune IPG Install Service File", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

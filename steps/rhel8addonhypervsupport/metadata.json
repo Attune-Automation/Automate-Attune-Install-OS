@@ -1,0 +1,16 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "ec8f7618-96b1-4c1a-9d08-f867ce88f76c", 
+    "isBlueprint": false, 
+    "key": "rhel8addonhypervsupport", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhel8installgssntlmssplink"
+        }
+    ], 
+    "name": "RHEL8 Add-On Hyper-V Support", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

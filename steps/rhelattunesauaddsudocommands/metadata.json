@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "66f6153b-4c61-4256-bc76-c55c624544e7", 
+    "interpreter": 1, 
+    "key": "rhelattunesauaddsudocommands", 
+    "name": "RHEL Attune SAU Add Sudo Commands", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

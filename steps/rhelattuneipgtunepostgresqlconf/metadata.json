@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "e09b5b98-61f8-44b6-a8d0-35c9cd87fe3c", 
+    "interpreter": 1, 
+    "key": "rhelattuneipgtunepostgresqlconf", 
+    "name": "RHEL Attune IPG Tune postgresql.conf", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

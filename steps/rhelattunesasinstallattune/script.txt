@@ -1,0 +1,20 @@
+
+if [ "/home/attune/python/bin/pip" == `which pip` ]; then
+    echo "SUCCESS, this is the right pip"
+else
+    echo "This isn't the right pip"
+    false
+fi
+
+
+cd synerty-attune-v*-release
+
+# Deploy the software
+pip install --no-index --no-cache  --find-links=py py/attune-*.whl
+
+# Install the init script
+sed -i -e 's%#ATTUNE_HOME#%/home/attune%' init/attune.service
+sudo cp init/attune.service /lib/systemd/system/
+
+# Reload systemctl
+sudo systemctl daemon-reload

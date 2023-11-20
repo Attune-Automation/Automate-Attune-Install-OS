@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "e03ba4a2-eede-4495-9375-9a13ce0bd0db", 
+    "interpreter": 1, 
+    "key": "adtopenport8050onfirewalld", 
+    "name": "ADT Open Port 8050 on firewalld", 
+    "osCredKey": "linuxrootuser", 
+    "serverKey": "attuneserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

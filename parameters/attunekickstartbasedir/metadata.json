@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "dcd0ca9f-be8d-4da8-92d8-d321984afc94", 
+    "key": "attunekickstartbasedir", 
+    "name": "Attune Kickstart Base Dir", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

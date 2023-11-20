@@ -1,0 +1,5 @@
+
+echo "Installing RPMs"
+
+# Install the RPMs
+rpm -Uvh --force `find /tmp/attune_deploy_rpm_rhelattunesvcsinstallpowershellv624 -name "*.rpm"` 

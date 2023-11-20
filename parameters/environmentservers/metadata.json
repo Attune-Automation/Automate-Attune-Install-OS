@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "786dd8af-1f6d-4cbb-83b0-52541ad622d8", 
+    "key": "environmentservers", 
+    "name": "Environment Servers", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.ServerList"
+}

@@ -1,0 +1,5 @@
+DIR="synerty-attune-v*"
+
+[ -d ${DIR} ] || echo "Nothing to cleanup!"
+
+[ ! ${DIR} ] || sudo rm -rfv ${DIR}

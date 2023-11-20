@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "2113a191-8b22-493c-a77e-cc68dc8daa4c", 
+    "key": "postgresqlver", 
+    "name": "PostgreSQL Ver", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

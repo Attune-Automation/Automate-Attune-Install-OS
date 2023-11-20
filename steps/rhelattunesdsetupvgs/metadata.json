@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "a289f3f8-905f-4fb6-8e22-0615d39a8b2d", 
+    "interpreter": 1, 
+    "key": "rhelattunesdsetupvgs", 
+    "name": "RHEL Attune SD Setup VGs", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

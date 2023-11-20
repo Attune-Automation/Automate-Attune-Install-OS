@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "8bdf985d-9806-439d-b12f-5ae9674422dd", 
+    "interpreter": 1, 
+    "key": "rhelattunesauchownhomedir", 
+    "name": "RHEL Attune SAU chown Home Dir", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

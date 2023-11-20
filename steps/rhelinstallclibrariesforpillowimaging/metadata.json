@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "f39ac236-dfd9-46d9-a251-1c74327a6c84", 
+    "interpreter": 1, 
+    "key": "rhelinstallclibrariesforpillowimaging", 
+    "name": "RHEL Install C Libraries for Pillow Imaging", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

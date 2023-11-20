@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "2c49d9f0-0762-4448-9c2e-7b8ce4a93761", 
+    "fileName": "postgresql-12.5.tar.bz2", 
+    "formatKey": "tar.bz2", 
+    "key": "postgresqlsourcev125", 
+    "md5": "f19e48090bbd59ea81826b5fd99e7e97", 
+    "name": "PostgreSQL Source v12.5", 
+    "remoteUri": "https://ftp.postgresql.org/pub/source/v12.5/postgresql-12.5.tar.bz2", 
+    "size": 20729654, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

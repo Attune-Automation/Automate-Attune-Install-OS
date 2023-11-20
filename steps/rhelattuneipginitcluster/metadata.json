@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "dc0c7fca-52a3-4415-b66c-f7c195f6a05a", 
+    "interpreter": 1, 
+    "key": "rhelattuneipginitcluster", 
+    "name": "RHEL Attune IPG Init Cluster", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

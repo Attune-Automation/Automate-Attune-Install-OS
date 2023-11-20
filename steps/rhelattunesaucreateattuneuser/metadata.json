@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "57fd5b2b-527f-4bde-9c84-5b9b7d64b827", 
+    "interpreter": 1, 
+    "key": "rhelattunesaucreateattuneuser", 
+    "name": "RHEL Attune SAU Create Attune User", 
+    "osCredKey": "attunenodeuserroot", 
+    "promptResponses": "password:==={attuneNodeUserAttune.password}", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshPromptedTuple"
+}

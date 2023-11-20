@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "4797bc24-4960-4c22-9ab7-b24fd3a006b1", 
+    "interpreter": 1, 
+    "key": "rhelinstallccompilerpackage", 
+    "name": "RHEL Install C Compiler Package", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

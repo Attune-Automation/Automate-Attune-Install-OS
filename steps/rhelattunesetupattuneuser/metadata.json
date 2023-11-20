@@ -1,0 +1,24 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "c4a56ef0-c79a-4fc0-8478-9314ee64343f", 
+    "isBlueprint": false, 
+    "key": "rhelattunesetupattuneuser", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesaucreateattuneuser"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "rhelattunesauaddsudocommands"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "rhelattunesauchownhomedir"
+        }
+    ], 
+    "name": "RHEL Attune Setup Attune User", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

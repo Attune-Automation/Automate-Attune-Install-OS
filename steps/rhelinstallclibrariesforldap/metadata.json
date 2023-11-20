@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "0c128fd4-a699-471f-a04f-b6e00850e7f5", 
+    "interpreter": 1, 
+    "key": "rhelinstallclibrariesforldap", 
+    "name": "RHEL Install C Libraries for LDAP", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

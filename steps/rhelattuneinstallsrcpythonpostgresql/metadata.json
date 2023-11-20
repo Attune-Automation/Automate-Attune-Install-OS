@@ -1,0 +1,36 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "f9507408-9396-4fb1-afbc-d5d564fcbf4f", 
+    "isBlueprint": false, 
+    "key": "rhelattuneinstallsrcpythonpostgresql", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunepypgupdatebashprofile"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "rhelattuneinstallpythonv391"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "rhelattuneinstallpostgresqlv125"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "rhelattuneinstallcmakev3192"
+        }, 
+        {
+            "order": 80, 
+            "stepKey": "rhelattuneinstalltimescaledbv174"
+        }, 
+        {
+            "order": 180, 
+            "stepKey": "rhelattunestartpostgresql"
+        }
+    ], 
+    "name": "RHEL Attune Install Src Python + PostgreSQL", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

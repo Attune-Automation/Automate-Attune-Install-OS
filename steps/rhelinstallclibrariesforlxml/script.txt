@@ -1,0 +1,4 @@
+PKG="libxml2 libxml2-devel"
+PKG="$PKG libxslt libxslt-devel"
+
+sudo yum install -y $PKG

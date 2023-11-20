@@ -1,0 +1,40 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "a3d5fa9a-3fe2-4fb7-8e77-a668103da912", 
+    "isBlueprint": false, 
+    "key": "addontwistdforkickstartdirectory", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "adtcheckiftwistdisinstalled"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "adtdeployrunhttpisosh"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "adtsetpermissionsforrunhttpisosh"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "adtpushhttpisoservice"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "adtreloadsystemd"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "adtstartandenablehttpiso"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "adtopenport8050onfirewalld"
+        }
+    ], 
+    "name": "Add-On Twistd for kickstart Directory", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "e616f2d8-2e62-4a32-8d4f-89c8b90d4851", 
+    "fileName": "timescaledb-1.7.4.tar.gz", 
+    "formatKey": "tar.gz", 
+    "key": "timescaledbsourcev174", 
+    "md5": "95a64e6c7633cd7d4156db89593cf928", 
+    "name": "TimescaleDB Source v1.7.4", 
+    "remoteUri": "https://github.com/timescale/timescaledb/archive/1.7.4.zip", 
+    "size": 1974350, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

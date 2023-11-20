@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "13631855-e189-4e31-8231-24131b79a308", 
+    "interpreter": 1, 
+    "key": "rhelattunesvcsinstalllibicu", 
+    "name": "RHEL Attune SVCS Install libicu", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

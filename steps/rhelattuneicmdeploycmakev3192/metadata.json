@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "cmakesourcev3192", 
+    "deployPath": "/home/attune", 
+    "enabled": true, 
+    "externalUuid4": "2fde1800-2186-426f-a248-ca7032cfcc31", 
+    "key": "rhelattuneicmdeploycmakev3192", 
+    "name": "RHEL Attune ICM Deploy CMake v3.19.2", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

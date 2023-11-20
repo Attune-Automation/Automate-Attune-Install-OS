@@ -1,0 +1,3 @@
+PKG="openldap-devel"
+
+sudo yum install -y $PKG

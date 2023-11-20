@@ -1,0 +1,9 @@
+TIMESCALE_PATH="/go/bin"
+
+if grep -q "${TIMESCALE_PATH}" .bash_profile
+then
+    echo "${TIMESCALE_PATH} already exists in ${HOME}/.bash_profile PATH."
+else
+    echo "Adding ${TIMESCALE_PATH} to .bash_profile PATH."
+    echo "export PATH=\"\$PATH:${HOME}/go/bin\"" >> .bash_profile
+fi

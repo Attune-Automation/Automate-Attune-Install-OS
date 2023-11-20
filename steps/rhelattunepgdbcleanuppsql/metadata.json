@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "060123b8-2b7d-47aa-8ed3-a1c01bc07291", 
+    "interpreter": 1, 
+    "key": "rhelattunepgdbcleanuppsql", 
+    "name": "RHEL Attune PGDB Cleanup psql", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

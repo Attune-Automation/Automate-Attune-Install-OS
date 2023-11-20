@@ -1,0 +1,13 @@
+ATTUNE_CMAKE_VER={cmakeVer}
+
+SRC_DIR="$HOME/cmake-${ATTUNE_CMAKE_VER}"
+
+cd ${SRC_DIR}
+
+./configure --prefix=$HOME/opt
+
+
+make -j6 install
+
+# Remove the src dir and install file
+rm -rf ${SRC_DIR}*

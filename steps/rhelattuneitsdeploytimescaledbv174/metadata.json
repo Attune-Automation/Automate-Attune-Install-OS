@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "timescaledbsourcev174", 
+    "deployPath": "/home/attune", 
+    "enabled": true, 
+    "externalUuid4": "e6a11251-36aa-4c48-af41-da3eddf52dcd", 
+    "key": "rhelattuneitsdeploytimescaledbv174", 
+    "name": "RHEL Attune ITS Deploy TimescaleDB v1.7.4", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

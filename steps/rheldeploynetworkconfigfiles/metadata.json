@@ -1,0 +1,33 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "etcconfigs", 
+    "deployPath": "/", 
+    "enabled": true, 
+    "externalUuid4": "bc2e549d-3a47-4bc7-b904-199d49fd1aa8", 
+    "key": "rheldeploynetworkconfigfiles", 
+    "makoFileNames": [
+        "etc/hosts", 
+        "etc/sysconfig/network"
+    ], 
+    "makoParameters": [
+        {
+            "name": "attuneNode", 
+            "parameterKey": "attunenode", 
+            "parameterType": "c.s.s.b.phv.LinuxServer"
+        }, 
+        {
+            "name": "environmentServers", 
+            "parameterKey": "environmentservers", 
+            "parameterType": "c.s.s.b.phv.ServerList"
+        }, 
+        {
+            "name": "timeServers", 
+            "parameterKey": "ntpservers", 
+            "parameterType": "c.s.s.b.phv.ServerList"
+        }
+    ], 
+    "name": "RHEL Deploy Network Config Files", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileCompiledTuple"
+}

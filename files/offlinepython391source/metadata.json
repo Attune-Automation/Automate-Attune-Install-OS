@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "44de46c9-9551-4ee3-96fb-aea0f67170e0", 
+    "fileName": "Python-3.9.1.tgz", 
+    "formatKey": "tar.gz", 
+    "key": "offlinepython391source", 
+    "md5": "429ae95d24227f8fa1560684fad6fca7", 
+    "name": "Offline Python 3.9.1 Source", 
+    "remoteUri": "https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz", 
+    "size": 25372998, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "d8d0738d-883c-498f-8d25-6278135567d2", 
+    "fileName": "powershell-6.2.4-1.rhel.7.x86_64.rpm", 
+    "formatKey": "unknown", 
+    "key": "powershellv624", 
+    "md5": "edcd072f03b5e982e9b6562e531c2743", 
+    "name": "Powershell v6.2.4", 
+    "remoteUri": "https://github.com/PowerShell/PowerShell/releases/download/v6.2.4/powershell-6.2.4-1.rhel.7.x86_64.rpm", 
+    "size": 57019819, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

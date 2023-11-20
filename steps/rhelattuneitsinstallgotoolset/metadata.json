@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "f7c8c44c-72db-4f92-b3b7-9749908a2324", 
+    "interpreter": 1, 
+    "key": "rhelattuneitsinstallgotoolset", 
+    "name": "RHEL Attune ITS Install go-toolset", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

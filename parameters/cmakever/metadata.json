@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "825a9a28-d4e7-4ae3-9555-fd88a4bb913f", 
+    "key": "cmakever", 
+    "name": "CMake Ver", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

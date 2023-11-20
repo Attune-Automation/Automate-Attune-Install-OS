@@ -1,0 +1,13 @@
+[Unit]
+Description=Attune Kickstart ISO Web Server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+User=attune
+ExecStart=/home/attune/run_httpiso.sh
+Environment="PATH=/home/attune/python/bin:/home/attune/opt/bin:/home/attune/.local/bin:/home/attune/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin"
+Environment="LD_LIBRARY_PATH=/home/attune/opt/lib"
+
+[Install]
+WantedBy=multi-user.target

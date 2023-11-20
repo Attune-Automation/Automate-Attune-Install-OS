@@ -1,0 +1,36 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "48ce4cf6-2a5e-4f29-bf02-0f96cc7bf102", 
+    "isBlueprint": false, 
+    "key": "rhelattuneinstallpythonv391", 
+    "links": [
+        {
+            "order": 20, 
+            "stepKey": "rhelattuneipdeploypythonv391"
+        }, 
+        {
+            "order": 120, 
+            "stepKey": "rhelattuneipconfigurebuildinstall"
+        }, 
+        {
+            "order": 220, 
+            "stepKey": "rhelattuneipcleanup"
+        }, 
+        {
+            "order": 270, 
+            "stepKey": "rhelattunecreatesymlinks"
+        }, 
+        {
+            "order": 320, 
+            "stepKey": "rhelattuneipdeploypythonpypis"
+        }, 
+        {
+            "order": 370, 
+            "stepKey": "rhelinstallpythonpypis"
+        }
+    ], 
+    "name": "RHEL Attune Install Python v3.9.1", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

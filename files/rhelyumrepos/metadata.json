@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "e9d32bdd-3dfe-4f85-a947-9c0bb26cf410", 
+    "key": "rhelyumrepos", 
+    "name": "RHEL yum repos", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

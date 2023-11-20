@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "cb693411-f59c-471c-b968-414f574306b2", 
+    "key": "varlvmvolumesize", 
+    "name": "/var LVM Volume Size", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

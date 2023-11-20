@@ -1,0 +1,60 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "766435a9-54b9-461a-b062-764dc2dcf88a", 
+    "isBlueprint": false, 
+    "key": "rhelattunesetuposprerequisites", 
+    "links": [
+        {
+            "order": 50, 
+            "stepKey": "rhelsetuprpmmirrors"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "rhelyumupdateall"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "rhelinstallutilities"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "rhelinstallccompilerpackage"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "rhelenablepowertoolsrepo"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "rhelinstallpythonbuilddependencies"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "rhelinstallclibrariesforpython"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "rhelinstallclibrariesforlxml"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "rhelinstallclibrariesfororacleclient"
+        }, 
+        {
+            "order": 550, 
+            "stepKey": "rhelinstallclibrariesforldap"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "rhelinstallclibrariesforpillowimaging"
+        }, 
+        {
+            "order": 650, 
+            "stepKey": "rhelcleanupdownloadedpackages"
+        }
+    ], 
+    "name": "RHEL Attune Setup OS Prerequisites", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

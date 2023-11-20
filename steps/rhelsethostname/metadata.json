@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "eb135839-9772-4e60-8d9a-83e7867f6e8a", 
+    "interpreter": 1, 
+    "key": "rhelsethostname", 
+    "name": "RHEL Set Hostname", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

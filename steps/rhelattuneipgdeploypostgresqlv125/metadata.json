@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "postgresqlsourcev125", 
+    "deployPath": "/home/attune", 
+    "enabled": true, 
+    "externalUuid4": "e9b95a4d-da15-4eb0-b9e3-dd1faef35c6a", 
+    "key": "rhelattuneipgdeploypostgresqlv125", 
+    "name": "RHEL Attune IPG Deploy PostgreSQL v12.5", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

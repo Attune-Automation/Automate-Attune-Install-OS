@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "0c39edbf-933f-40e4-bfad-0b46554d4722", 
+    "interpreter": 1, 
+    "key": "rheldisableipv6", 
+    "name": "RHEL Disable IPv6", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

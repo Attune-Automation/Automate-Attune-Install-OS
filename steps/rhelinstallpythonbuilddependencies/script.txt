@@ -1,0 +1,5 @@
+PKG="curl git libgit2-devel m4 texinfo ruby bzip2 bzip2-devel libcurl-devel"
+PKG="$PKG expat-devel ncurses-libs zlib-devel gmp-devel xz-libs"
+PKG="$PKG openssl openssl-devel sqlite-devel"
+
+yum install -y $PKG

@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "ee5acbf6-6110-4560-9714-22b734723060", 
+    "key": "vcenteruser", 
+    "name": "vCenter User", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.OsCred"
+}

@@ -1,0 +1,19 @@
+cat > /etc/security/limits.d/30-attune.conf << EOF
+
+attune      hard    nofile      500000
+attune      soft    nofile      500000
+
+EOF
+
+echo "/etc/security/limits.d/30-attune.conf:"
+cat /etc/security/limits.d/30-attune.conf
+
+cat > /etc/sysctl.d/30-attune.conf << EOF
+
+fs.file-max = 2097152
+
+EOF
+
+echo "============================="
+echo "/etc/sysctl.d/30-attune.conf:"
+cat /etc/sysctl.d/30-attune.conf

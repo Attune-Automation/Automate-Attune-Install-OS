@@ -1,0 +1,8 @@
+
+cd /home/attune/opt/bin
+ln -s --force pip3 pip
+ln -s --force python3 python
+
+ls -ltrh pi*
+
+ls -ltrh pytho*

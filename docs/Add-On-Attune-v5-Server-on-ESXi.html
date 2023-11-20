@@ -1,0 +1,7324 @@
+
+<!doctype html>
+<html lang="en">
+
+
+
+
+<head>
+    <title>How to Add-On Attune v5 Server on ESXi - Attune Automation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title"
+          content="How to Add-On Attune v5 Server on ESXi - Attune Automation">
+    <meta name="description"
+          content="">
+    <meta name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+          content="HowTo Add-On Attune v5 Server on ESXi - Attune Automation" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Attune Automation" />
+    <meta property="article:section" content="IT Instruction" />
+
+    <meta name="twitter:title"
+          content="How to Add-On Attune v5 Server on ESXi - Attune Automation" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-270x270.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5TZQZNDJCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TZQZNDJCD');
+    </script>
+</head>
+
+
+<body>
+
+<!-- Project NavBar -->
+
+<div class="bg-white border-bottom box-shadow sticky-top mb-3">
+<div class="container px-0">
+    <div class="row px-0">
+        <div class="col d-flex flex-column flex-lg-row align-items-center px-0
+            py-3">
+            <a class="navbar-brand my-0 mr-lg-auto"
+                  href="https://www.servertribe.com/"
+                  target="_blank">
+                    <img
+                        src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                        alt="Attune - Powered by ServerTribe"
+                        class="img-fluid navbar-img">
+            </a>
+            <nav class="my-2 my-lg-0 mr-lg-3">
+                <a class="p-2 text-dark" href="http://doc.servertribe.com/"
+                   target="_blank">
+                    Documentation
+                </a>
+                <a class="p-2 text-dark"
+                   href="https://discord.com/invite/3YpJsagqUn"
+                   target="_blank">
+                    Discord
+                </a>
+                <a class="p-2 text-dark" href="https://github.com/Attune-Automation"
+                   target="_blank">
+                    GitHub
+                </a>
+                <a class="p-2 text-dark" href="https://www.servertribe.com/learn/"
+                   target="_blank">
+                    Learn
+                </a>
+            </nav>
+            <a class="btn btn-outline-primary"
+               href="https://www.servertribe.com/download-attune-registration/"
+               target="_blank">
+                Download NOW!
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<!-- Project breadcrumbs -->
+
+<!-- Project breadcrumbs -->
+<div class="container px-0">
+    <div class="row">
+        <nav class="col px-0" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                    Automate Attune Install OS
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <strong>Add-On Attune v5 Server on ESXi</strong>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Blueprint Header -->
+
+<div class="container px-0">
+    <!-- Blueprint name and description -->
+    <div class="row">
+        <div class="col px-0">
+            <h1 class="text-left">
+                How to Add-On Attune v5 Server on ESXi
+            </h1>
+        </div>
+    </div>
+
+<!-- Blueprint Description -->
+    <div class="row pt-4">
+        <div class="col-6 px-0">
+            <h6 class="text-left">
+                This documentation is generated by
+                <a href="https://www.servertribe.com/"
+                    class="badge badge-primary"
+                    target="_blank">
+                    Attune
+                </a>
+            </h6>
+        </div>
+        <div class="col-6 align-self-end text-right px-0">
+            <h6 class="text-right">
+                <a href="https://www.youtube.com/@servertribe"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    YouTube
+                </a>
+                <a href="https://github.com/Attune-Automation"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    GitHub
+                </a>
+                <a href="https://discord.com/invite/3YpJsagqUn"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Discord
+                </a>
+                <a href="https://www.linkedin.com/company/servertribe/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    LinkedIn
+                </a>
+                <a href="http://doc.servertribe.com/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Documentation
+                </a>
+            </h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="documentation">
+    <div class="container px-0">
+        <div class="row">
+
+<!-- Blueprint ToC -->
+
+
+            <div class="toc col-lg-2 px-0 pr-5">
+                <div class="container px-0 pt-3">
+                    <p class="pb-2">
+                        <strong>Contents</strong>
+                    </p>
+                    <p class="text-muted">
+                        <a href="#top">
+                            <strong>Add-On Attune v5 Server on ESXi</strong>
+                        </a>
+                    </p>
+
+
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#prepareesxivirtualdisksforattuneplatform">
+                            <strong>Step 1 -</strong> Prepare ESXi Virtual Disks for Attune Platform
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdvmwareaddvirtualdisks">
+                            <strong>Step 1.1 -</strong> RHEL Attune SD VMWare Add Virtual Disks
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#setupattuneplatform">
+                            <strong>Step 2 -</strong> Setup Attune Platform
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetupdisks">
+                            <strong>Step 2.1 -</strong> RHEL Attune Setup Disks
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdrunpartprobe">
+                            <strong>Step 2.1.1 -</strong> RHEL Attune SD Run partprobe
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetupvgs">
+                            <strong>Step 2.1.2 -</strong> RHEL Attune SD Setup VGs
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetuphomelv">
+                            <strong>Step 2.1.3 -</strong> RHEL Attune SD Setup Home LV
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetuptmplv">
+                            <strong>Step 2.1.4 -</strong> RHEL Attune SD Setup Tmp LV
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetupkickstartlv">
+                            <strong>Step 2.1.5 -</strong> RHEL Attune SD Setup Kickstart LV
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetupbackuplv">
+                            <strong>Step 2.1.6 -</strong> RHEL Attune SD Setup Backup LV
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetupdblvs">
+                            <strong>Step 2.1.7 -</strong> RHEL Attune SD Setup DB LVs
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesdsetupvar">
+                            <strong>Step 2.1.8 -</strong> RHEL Attune SD Setup /var
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetuposprerequisites">
+                            <strong>Step 2.2 -</strong> RHEL Attune Setup OS Prerequisites
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelsetuprpmmirrors">
+                            <strong>Step 2.2.1 -</strong> RHEL Setup RPM Mirrors
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelyumupdateall">
+                            <strong>Step 2.2.2 -</strong> RHEL Yum Update All
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallutilities">
+                            <strong>Step 2.2.3 -</strong> RHEL Install Utilities
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallccompilerpackage">
+                            <strong>Step 2.2.4 -</strong> RHEL Install C Compiler Package
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelenablepowertoolsrepo">
+                            <strong>Step 2.2.5 -</strong> RHEL Enable PowerTools Repo
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallpythonbuilddependencies">
+                            <strong>Step 2.2.6 -</strong> RHEL Install Python Build Dependencies
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallclibrariesforpython">
+                            <strong>Step 2.2.7 -</strong> RHEL Install C Libraries for Python
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallclibrariesforlxml">
+                            <strong>Step 2.2.8 -</strong> RHEL Install C Libraries for lxml
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallclibrariesfororacleclient">
+                            <strong>Step 2.2.9 -</strong> RHEL Install C Libraries for Oracle Client
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallclibrariesforldap">
+                            <strong>Step 2.2.10 -</strong> RHEL Install C Libraries for LDAP
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallclibrariesforpillowimaging">
+                            <strong>Step 2.2.11 -</strong> RHEL Install C Libraries for Pillow Imaging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelcleanupdownloadedpackages">
+                            <strong>Step 2.2.12 -</strong> RHEL Cleanup Downloaded Packages
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneconfigureos">
+                            <strong>Step 2.3 -</strong> RHEL Attune Configure OS
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rheldeploynetworkconfigfiles">
+                            <strong>Step 2.3.1 -</strong> RHEL Deploy Network Config Files
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelfixnetworkconfigfilepermissions">
+                            <strong>Step 2.3.2 -</strong> RHEL Fix Network Config File Permissions
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelsethostname">
+                            <strong>Step 2.3.3 -</strong> RHEL Set Hostname
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rheldisableipv6">
+                            <strong>Step 2.3.4 -</strong> RHEL Disable IPv6
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelupdatednsservers">
+                            <strong>Step 2.3.5 -</strong> RHEL Update DNS Servers
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunecosincreasingopenfilelimits">
+                            <strong>Step 2.3.6 -</strong> RHEL Attune COS Increasing Open File Limits
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunecosconfigurefirewall">
+                            <strong>Step 2.3.7 -</strong> RHEL Attune COS Configure Firewall
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunecosconfigureselinux">
+                            <strong>Step 2.3.8 -</strong> RHEL Attune COS Configure SELinux
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetupattuneuser">
+                            <strong>Step 2.4 -</strong> RHEL Attune Setup Attune User
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesaucreateattuneuser">
+                            <strong>Step 2.4.1 -</strong> RHEL Attune SAU Create Attune User
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesauaddsudocommands">
+                            <strong>Step 2.4.2 -</strong> RHEL Attune SAU Add Sudo Commands
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesauchownhomedir">
+                            <strong>Step 2.4.3 -</strong> RHEL Attune SAU chown Home Dir
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneinstallsrcpythonpostgresql">
+                            <strong>Step 2.5 -</strong> RHEL Attune Install Src Python + PostgreSQL
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunepypgupdatebashprofile">
+                            <strong>Step 2.5.1 -</strong> RHEL Attune PYPG Update bash_profile
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneinstallpythonv391">
+                            <strong>Step 2.5.2 -</strong> RHEL Attune Install Python v3.9.1
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipdeploypythonv391">
+                            <strong>Step 2.5.2.1 -</strong> RHEL Attune IP Deploy Python v3.9.1
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipconfigurebuildinstall">
+                            <strong>Step 2.5.2.2 -</strong> RHEL Attune IP Configure Build Install
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipcleanup">
+                            <strong>Step 2.5.2.3 -</strong> RHEL Attune IP Cleanup
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunecreatesymlinks">
+                            <strong>Step 2.5.2.4 -</strong> RHEL Attune Create Symlinks
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipdeploypythonpypis">
+                            <strong>Step 2.5.2.5 -</strong> RHEL Attune IP Deploy Python PyPIs
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelinstallpythonpypis">
+                            <strong>Step 2.5.2.6 -</strong> RHEL Install Python Py PIs
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneinstallpostgresqlv125">
+                            <strong>Step 2.5.3 -</strong> RHEL Attune Install PostgreSQL v12.5
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipgdeploypostgresqlv125">
+                            <strong>Step 2.5.3.1 -</strong> RHEL Attune IPG Deploy PostgreSQL v12.5
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipgconfigurebuildinstall">
+                            <strong>Step 2.5.3.2 -</strong> RHEL Attune IPG Configure Build Install
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipginitcluster">
+                            <strong>Step 2.5.3.3 -</strong> RHEL Attune IPG Init Cluster
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipgtunepostgresqlconf">
+                            <strong>Step 2.5.3.4 -</strong> RHEL Attune IPG Tune postgresql.conf
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneipginstallservicefile">
+                            <strong>Step 2.5.3.5 -</strong> RHEL Attune IPG Install Service File
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneinstallcmakev3192">
+                            <strong>Step 2.5.4 -</strong> RHEL Attune Install CMake v3.19.2
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneicmdeploycmakev3192">
+                            <strong>Step 2.5.4.1 -</strong> RHEL Attune ICM Deploy CMake v3.19.2
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneicmconfigurebuildinstall">
+                            <strong>Step 2.5.4.2 -</strong> RHEL Attune ICM Configure Build Install
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneinstalltimescaledbv174">
+                            <strong>Step 2.5.5 -</strong> RHEL Attune Install TimescaleDB v1.7.4
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneitsinstallgotoolset">
+                            <strong>Step 2.5.5.1 -</strong> RHEL Attune ITS Install go-toolset
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneitsinstalltimescaledbtune">
+                            <strong>Step 2.5.5.2 -</strong> RHEL Attune ITS Install timescaledb-tune
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneitsaddtimescaledbtunetopath">
+                            <strong>Step 2.5.5.3 -</strong> RHEL Attune ITS Add timescaledb-tune to Path
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneitsdeploytimescaledbv174">
+                            <strong>Step 2.5.5.4 -</strong> RHEL Attune ITS Deploy TimescaleDB v1.7.4
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneitsconfigurebuildinstall">
+                            <strong>Step 2.5.5.5 -</strong> RHEL Attune ITS Configure Build Install
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneitstunedb">
+                            <strong>Step 2.5.5.6 -</strong> RHEL Attune ITS Tune DB
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunestartpostgresql">
+                            <strong>Step 2.5.6 -</strong> RHEL Attune Start PostgreSQL
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunecreatepostgresqldb">
+                            <strong>Step 2.6 -</strong> RHEL Attune Create Postgresql DB
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunepgdbsetsqlpassword">
+                            <strong>Step 2.6.1 -</strong> RHEL Attune PGDB Set SQL Password
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunepgdbcreatedatabase">
+                            <strong>Step 2.6.2 -</strong> RHEL Attune PGDB Create database
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunepgdbcleanuppsql">
+                            <strong>Step 2.6.3 -</strong> RHEL Attune PGDB Cleanup psql
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetupattuneconfig">
+                            <strong>Step 2.7 -</strong> RHEL Attune Setup Attune Config
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesacconfigureattunecfg">
+                            <strong>Step 2.7.1 -</strong> RHEL Attune SAC Configure Attune CFG
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesacconfiguregit">
+                            <strong>Step 2.7.2 -</strong> RHEL Attune SAC Configure GIT
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#attuneplatformvmandkssupport">
+                            <strong>Step 2.8 -</strong> Attune Platform VM and KS Support
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetupbootisosupport">
+                            <strong>Step 2.8.1 -</strong> RHEL Attune Setup Boot ISO Support
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesbsinstalldependencies">
+                            <strong>Step 2.8.1.1 -</strong> RHEL Attune SBS Install Dependencies
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetupvcentersupport">
+                            <strong>Step 2.8.2 -</strong> RHEL Attune Setup vCenter Support
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcsinstalllibicu">
+                            <strong>Step 2.8.2.1 -</strong> RHEL Attune SVCS Install libicu
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcssetuppowershellv624">
+                            <strong>Step 2.8.2.2 -</strong> RHEL Attune SVCS Setup Powershell v6.2.4
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcspowershellv624deploy">
+                            <strong>Step 2.8.2.2.1 -</strong> RHEL Attune SVCSPowershell v6.2.4 Deploy
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcspowershellv624install">
+                            <strong>Step 2.8.2.2.2 -</strong> RHEL Attune SVCSPowershell v6.2.4 Install
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcspowershellv624cleanup">
+                            <strong>Step 2.8.2.2.3 -</strong> RHEL Attune SVCSPowershell v6.2.4 Cleanup
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcsdeployvmwarepowercliv67">
+                            <strong>Step 2.8.2.3 -</strong> RHEL Attune SVCS Deploy VMWare.PowerCLI v6.7
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesvcstestvmwarepowercli">
+                            <strong>Step 2.8.2.4 -</strong> RHEL Attune SVCS Test VMWare.PowerCLI
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesetupovirtsupport">
+                            <strong>Step 2.8.3 -</strong> RHEL Attune Setup oVirt Support
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesovsinstallpython3">
+                            <strong>Step 2.8.3.1 -</strong> RHEL Attune SOVS Install Python3
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesovscreatevirtualenv">
+                            <strong>Step 2.8.3.2 -</strong> RHEL Attune SOVS Create Virtualenv
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhel8addonhypervsupport">
+                            <strong>Step 2.8.4 -</strong> RHEL8 Add-On Hyper-V Support
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhel8installgssntlmssplink">
+                            <strong>Step 2.8.4.1 -</strong> RHEL8 Install gssntlmssp (link)
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#attunev5setupwinpesupportrhel8link">
+                            <strong>Step 2.8.5 -</strong> Attune v5 Setup WinPE Support RHEL8 (link)
+                        </a>
+                    </p>
+
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#installattunev5software">
+                            <strong>Step 3 -</strong> Install Attune v5 Software
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesasremoveattunerelease">
+                            <strong>Step 3.1 -</strong> RHEL Attune SAS Remove Attune Release
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesasdeployattunev5">
+                            <strong>Step 3.2 -</strong> RHEL Attune SAS Deploy Attune v5
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesaskillattune">
+                            <strong>Step 3.3 -</strong> RHEL Attune SAS Kill Attune
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesasremovevirtualenv">
+                            <strong>Step 3.4 -</strong> RHEL Attune SAS Remove Virtualenv
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesascreatevirtualenv">
+                            <strong>Step 3.5 -</strong> RHEL Attune SAS Create Virtualenv
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesasinstallattune">
+                            <strong>Step 3.6 -</strong> RHEL Attune SAS Install Attune
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesasstartattuneservice">
+                            <strong>Step 3.7 -</strong> RHEL Attune SAS Start Attune Service
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattuneenableattune">
+                            <strong>Step 3.8 -</strong> RHEL Attune Enable Attune
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesaswaitforattunetomigrate">
+                            <strong>Step 3.9 -</strong> RHEL Attune SAS Wait for Attune to Migrate
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#rhelattunesasremoveattunerelease">
+                            <strong>Step 3.10 -</strong> RHEL Attune SAS Remove Attune Release
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#addontwistdforkickstartdirectory">
+                            <strong>Step 4 -</strong> Add-On Twistd for kickstart Directory
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtcheckiftwistdisinstalled">
+                            <strong>Step 4.1 -</strong> ADT Check if twistd is Installed
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtdeployrunhttpisosh">
+                            <strong>Step 4.2 -</strong> ADT Deploy run_httpiso.sh
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtsetpermissionsforrunhttpisosh">
+                            <strong>Step 4.3 -</strong> ADT Set Permissions for run_httpiso.sh
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtpushhttpisoservice">
+                            <strong>Step 4.4 -</strong> ADT Push httpiso.service
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtreloadsystemd">
+                            <strong>Step 4.5 -</strong> ADT Reload Systemd
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtstartandenablehttpiso">
+                            <strong>Step 4.6 -</strong> ADT Start and Enable httpiso
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#adtopenport8050onfirewalld">
+                            <strong>Step 4.7 -</strong> ADT Open Port 8050 on firewalld
+                        </a>
+                    </p>
+
+
+
+                </div>
+            </div>
+
+<!-- Blueprint Contents -->
+            <div class="col-lg-8 pt-3">
+                <div class="container">
+
+
+        <div class="jumbotron">
+            <p class="display-3 text-center">
+                <strong>Automate This</strong>
+            </p>
+            <p class="lead text-center">
+                Use the <strong>Attune GUI</strong> for your Scripts
+            </p>
+            <p class="lead">
+                <ol>
+                    <a href="https://www.servertribe.com/download-attune-registration/"
+                        target="_blank">
+                        <span class="badge badge-primary">1</span>
+                        Download Attune
+                        <i class="fa-solid fa-download fa-beat-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://github.com/attune-Automation/"
+                        target="_blank">
+                        <span class="badge badge-primary">2</span>
+                         Copy the Attune Project URL
+                         <i class="fa-brands fa-github fa-fade"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://servertribe-attune.readthedocs.io/en/latest/howto/design_workspace/clone_project.html"
+                        target="_blank">
+                        <span class="badge badge-primary">3</span>
+                        Clone the Project in Attune
+                         <i class="fa-solid fa-book fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=GCWDI29rDV0"
+                        target="_blank">
+                        <span class="badge badge-primary">4</span>
+                        Plan your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=b7DhFcURkZg"
+                        target="_blank">
+                        <span class="badge badge-primary">5</span>
+                        Run your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+            </p>
+            <p class="lead text-center">
+                You've automated: <strong>Add-On Attune v5 Server on ESXi</strong>
+            </p>
+            <hr class="my-4 text-center">
+            <div class="col px-0">
+                <p class="text-center">
+                    Get the most out of automation with our get started
+                    videos, product demonstrations, and more.
+                </p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://www.servertribe.com/learn/"
+                       target="_blank"
+                       role="button">
+                        Learn Attune Automation
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>The following steps will guide you through the manual process.</p>
+        </div>
+
+<!-- Blueprint Steps -->
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="prepareesxivirtualdisksforattuneplatform">
+                            <a href="#prepareesxivirtualdisksforattuneplatform">
+                                <strong>Step 1 -</strong> Prepare ESXi Virtual Disks for Attune Platform
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesdvmwareaddvirtualdisks">
+                            <a href="#rhelattunesdvmwareaddvirtualdisks">
+                                <strong>Step 1.1 -</strong> RHEL Attune SD VMWare Add Virtual Disks
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>PowerCLI reference is available at : 
+https://pubs.vmware.com/vsphere-51/topic/com.vmware.powercli.cmdletref.doc/New-HardDisk.html</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {workeruser}@{workernode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Create the virtual disk
+
+pwsh &lt;&lt;&#x27;EOF&#x27;
+$ErrorActionPreference = &quot;Stop&quot;
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterServer.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+
+$vm = Get-VM &quot;{attuneNode.fqn}&quot;
+
+# Add 200gb
+$vm | New-HardDisk -CapacityGB 100 -StorageFormat Thin
+$vm | New-HardDisk -CapacityGB 100 -StorageFormat Thin
+$vm | New-HardDisk -CapacityGB 100 -StorageFormat Thin
+
+EOF
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="setupattuneplatform">
+                            <a href="#setupattuneplatform">
+                                <strong>Step 2 -</strong> Setup Attune Platform
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesetupdisks">
+                            <a href="#rhelattunesetupdisks">
+                                <strong>Step 2.1 -</strong> RHEL Attune Setup Disks
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdrunpartprobe">
+                            <a href="#rhelattunesdrunpartprobe">
+                                <strong>Step 2.1.1 -</strong> RHEL Attune SD Run partprobe
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>This step is added to avoid the errors like this in step "RHEL Attune SD Setup VGs":</p>
+<pre><code>Stderr  No device found for /dev/sdc1.
+</code></pre>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserroot}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;\&quot;partprobe --summary\&quot; original:&quot;
+partprobe --summary
+
+partprobe /dev/sdb
+partprobe /dev/sdc
+partprobe /dev/sdd
+
+echo &quot;\&quot;partprobe --summary\&quot; after:&quot;
+partprobe --summary
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetupvgs">
+                            <a href="#rhelattunesdsetupvgs">
+                                <strong>Step 2.1.2 -</strong> RHEL Attune SD Setup VGs
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mkvg() {
+    VG=$1
+    DEV=$2
+    
+    parted -s /dev/$DEV mktable gpt
+    parted -s /dev/$DEV mkpart primary xfs 1m 100%
+    
+    vgextend $VG /dev/${DEV}1
+    
+}
+
+mkvg rootvg sdb
+mkvg rootvg sdc
+mkvg rootvg sdd
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetuphomelv">
+                            <a href="#rhelattunesdsetuphomelv">
+                                <strong>Step 2.1.3 -</strong> RHEL Attune SD Setup Home LV
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+lvextend --size 100g --resizefs /dev/rootvg/home
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetuptmplv">
+                            <a href="#rhelattunesdsetuptmplv">
+                                <strong>Step 2.1.4 -</strong> RHEL Attune SD Setup Tmp LV
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+lvextend --size 30g --resizefs /dev/rootvg/tmp
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetupkickstartlv">
+                            <a href="#rhelattunesdsetupkickstartlv">
+                                <strong>Step 2.1.5 -</strong> RHEL Attune SD Setup Kickstart LV
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mklv() {
+    DIR=$1
+    NAME=$2
+    SIZE=$3
+    VG=$4
+    
+    mkdir -p $DIR
+    lvcreate --size $SIZE --name $NAME $VG 
+    mkfs.xfs /dev/mapper/$VG-$NAME
+    
+    cat &gt;&gt; /etc/fstab &lt;&lt;EOF
+/dev/mapper/$VG-$NAME    $DIR                    xfs     defaults        0 0
+EOF
+    mount -a
+}
+
+mklv {attuneKickstartBaseDir} kickstarts 50g rootvg
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetupbackuplv">
+                            <a href="#rhelattunesdsetupbackuplv">
+                                <strong>Step 2.1.6 -</strong> RHEL Attune SD Setup Backup LV
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mklv() {
+    DIR=$1
+    NAME=$2
+    SIZE=$3
+    VG=$4
+    
+    mkdir -p $DIR
+    lvcreate --size $SIZE --name $NAME $VG 
+    mkfs.xfs /dev/mapper/$VG-$NAME
+    
+    cat &gt;&gt; /etc/fstab &lt;&lt;EOF
+/dev/mapper/$VG-$NAME    $DIR                    xfs     defaults        0 0
+EOF
+    mount -a
+}
+
+mklv /backup backup 50g rootvg
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetupdblvs">
+                            <a href="#rhelattunesdsetupdblvs">
+                                <strong>Step 2.1.7 -</strong> RHEL Attune SD Setup DB LVs
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mklv() {
+    DIR=$1
+    NAME=$2
+    SIZE=$3
+    VG=$4
+    
+    mkdir -p $DIR
+    lvcreate --size $SIZE --name $NAME $VG 
+    mkfs.xfs /dev/mapper/$VG-$NAME
+    
+    cat &gt;&gt; /etc/fstab &lt;&lt;EOF
+/dev/mapper/$VG-$NAME    $DIR                    xfs     defaults        0 0
+EOF
+    mount -a
+}
+
+mklv /var/lib/pgsql pgsql 30g rootvg
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesdsetupvar">
+                            <a href="#rhelattunesdsetupvar">
+                                <strong>Step 2.1.8 -</strong> RHEL Attune SD Setup /var
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+VAR_VOLUME_MG=$(df -hm | grep rootvg-var | awk &#x27;{print $2}&#x27;)
+echo &quot;VAR_VOLUME_MG = ${VAR_VOLUME_MG}&quot;
+echo &quot;varLvmVolumeSize = {varLvmVolumeSize}&quot;
+
+if [ {varLvmVolumeSize} -gt ${VAR_VOLUME_MG} ]
+then
+    lvextend -v -L{varLvmVolumeSize}m -r /dev/rootvg/var
+else
+    echo &quot;/dev/rootvg/var is already at {varLvmVolumeSize} MB&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesetuposprerequisites">
+                            <a href="#rhelattunesetuposprerequisites">
+                                <strong>Step 2.2 -</strong> RHEL Attune Setup OS Prerequisites
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelsetuprpmmirrors">
+                            <a href="#rhelsetuprpmmirrors">
+                                <strong>Step 2.2.1 -</strong> RHEL Setup RPM Mirrors
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>RHEL_yum_repos.tar</strong>
+            to the target node.
+        </p>
+        <p>
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelyumupdateall">
+                            <a href="#rhelyumupdateall">
+                                <strong>Step 2.2.2 -</strong> RHEL Yum Update All
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+yum update -y
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallutilities">
+                            <a href="#rhelinstallutilities">
+                                <strong>Step 2.2.3 -</strong> RHEL Install Utilities
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;net-tools git unzip bzip2 rsync telnet wireshark nano ftp&quot;
+
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallccompilerpackage">
+                            <a href="#rhelinstallccompilerpackage">
+                                <strong>Step 2.2.4 -</strong> RHEL Install C Compiler Package
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;gcc gcc-c++ kernel-devel make&quot;
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelenablepowertoolsrepo">
+                            <a href="#rhelenablepowertoolsrepo">
+                                <strong>Step 2.2.5 -</strong> RHEL Enable PowerTools Repo
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if hostnamectl \
+    | grep &quot;Operating System&quot; \
+    | grep -qi &quot;centos&quot;
+then
+    echo &quot;This is CentOS&quot;
+        
+    dnf -y install dnf-plugins-core
+    dnf upgrade -y
+    dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+    dnf config-manager --set-enabled powertools
+
+    # For CentOS9-Stream
+    # dnf config-manager --set-enabled crb
+
+else
+    echo &quot;This is not CentOS, skipping.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallpythonbuilddependencies">
+                            <a href="#rhelinstallpythonbuilddependencies">
+                                <strong>Step 2.2.6 -</strong> RHEL Install Python Build Dependencies
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>https://stackoverflow.com/questions/71934306/cant-install-powertools-on-rhel-8-5</p>
+<p>powertools repository in CentOS is the equivalent of the Can't install powertools on RHEL 8.5 "CodeReady Builder" repository from RHEL.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;curl git libgit2-devel m4 texinfo ruby bzip2 bzip2-devel libcurl-devel&quot;
+PKG=&quot;$PKG expat-devel ncurses-libs zlib-devel gmp-devel xz-libs&quot;
+PKG=&quot;$PKG openssl openssl-devel sqlite-devel&quot;
+
+yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallclibrariesforpython">
+                            <a href="#rhelinstallclibrariesforpython">
+                                <strong>Step 2.2.7 -</strong> RHEL Install C Libraries for Python
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# For the cryptography package
+PKG=&quot;libffi-devel readline-devel&quot;
+
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallclibrariesforlxml">
+                            <a href="#rhelinstallclibrariesforlxml">
+                                <strong>Step 2.2.8 -</strong> RHEL Install C Libraries for lxml
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;libxml2 libxml2-devel&quot;
+PKG=&quot;$PKG libxslt libxslt-devel&quot;
+
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallclibrariesfororacleclient">
+                            <a href="#rhelinstallclibrariesfororacleclient">
+                                <strong>Step 2.2.9 -</strong> RHEL Install C Libraries for Oracle Client
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;libaio libaio-devel&quot;
+
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallclibrariesforldap">
+                            <a href="#rhelinstallclibrariesforldap">
+                                <strong>Step 2.2.10 -</strong> RHEL Install C Libraries for LDAP
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;openldap-devel&quot;
+
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallclibrariesforpillowimaging">
+                            <a href="#rhelinstallclibrariesforpillowimaging">
+                                <strong>Step 2.2.11 -</strong> RHEL Install C Libraries for Pillow Imaging
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PKG=&quot;libjpeg-turbo-devel&quot;
+PKG=&quot;$PKG zlib-devel&quot;
+PKG=&quot;$PKG libtiff-devel&quot;
+PKG=&quot;$PKG libwebp-devel&quot;
+PKG=&quot;$PKG openjpeg2-devel&quot;
+PKG=&quot;$PKG libtiff-devel&quot;
+PKG=&quot;$PKG freetype-devel&quot;
+PKG=&quot;$PKG lcms2-devel&quot;
+
+sudo yum install -y $PKG
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelcleanupdownloadedpackages">
+                            <a href="#rhelcleanupdownloadedpackages">
+                                <strong>Step 2.2.12 -</strong> RHEL Cleanup Downloaded Packages
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo yum clean all
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattuneconfigureos">
+                            <a href="#rhelattuneconfigureos">
+                                <strong>Step 2.3 -</strong> RHEL Attune Configure OS
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rheldeploynetworkconfigfiles">
+                            <a href="#rheldeploynetworkconfigfiles">
+                                <strong>Step 2.3.1 -</strong> RHEL Deploy Network Config Files
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>etc_Configs.tar</strong>
+            to the target node.
+        </p>
+        <p>
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelfixnetworkconfigfilepermissions">
+                            <a href="#rhelfixnetworkconfigfilepermissions">
+                                <strong>Step 2.3.2 -</strong> RHEL Fix Network Config File Permissions
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+chmod ugo+r /etc/hosts
+
+ls -ltrh /etc/hosts
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelsethostname">
+                            <a href="#rhelsethostname">
+                                <strong>Step 2.3.3 -</strong> RHEL Set Hostname
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;{attuneNode.hostname}&quot; &gt; /etc/hostname
+
+hostname &quot;{attuneNode.hostname}&quot;
+
+cat /etc/hostname
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rheldisableipv6">
+                            <a href="#rheldisableipv6">
+                                <strong>Step 2.3.4 -</strong> RHEL Disable IPv6
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+F=&quot;/etc/sysctl.conf&quot;
+
+if grep -q &#x27;net.ipv6&#x27; ${F}; then
+    echo &quot;IPv6 is already disabled&quot;
+else
+    echo &quot;Disabling IPv6&quot;
+    echo &quot;&quot; &gt;&gt; $F
+    echo &quot;# Disable IPv6&quot; &gt;&gt; $F
+    echo &quot;net.ipv6.conf.all.disable_ipv6 = 1&quot; &gt;&gt; $F
+    echo &quot;net.ipv6.conf.default.disable_ipv6 = 1&quot; &gt;&gt; $F
+    sysctl -p
+fi
+
+sed -i &#x27;/::1/d&#x27; /etc/hosts
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelupdatednsservers">
+                            <a href="#rhelupdatednsservers">
+                                <strong>Step 2.3.5 -</strong> RHEL Update DNS Servers
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+ETHERNET_DEVICE=$(nmcli device status | grep ethernet | awk &#x27;{print $1}&#x27;)
+echo &quot;ETHERNET_DEVICE=[${ETHERNET_DEVICE}]&quot;
+
+nmcli con mod ${ETHERNET_DEVICE} ipv4.dns &quot;{attuneSubnet.dns1} {attuneSubnet.dns2}&quot;
+nmcli con mod ${ETHERNET_DEVICE} ipv4.dns-search {adFullDomainName.value}
+nmcli con up ${ETHERNET_DEVICE}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunecosincreasingopenfilelimits">
+                            <a href="#rhelattunecosincreasingopenfilelimits">
+                                <strong>Step 2.3.6 -</strong> RHEL Attune COS Increasing Open File Limits
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>The symptom is seeing 'exceptions.IOError: [Errno 24] Too many open files:' in the 'attune.log'</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cat &gt; /etc/security/limits.d/30-attune.conf &lt;&lt; EOF
+
+attune      hard    nofile      500000
+attune      soft    nofile      500000
+
+EOF
+
+echo &quot;/etc/security/limits.d/30-attune.conf:&quot;
+cat /etc/security/limits.d/30-attune.conf
+
+cat &gt; /etc/sysctl.d/30-attune.conf &lt;&lt; EOF
+
+fs.file-max = 2097152
+
+EOF
+
+echo &quot;=============================&quot;
+echo &quot;/etc/sysctl.d/30-attune.conf:&quot;
+cat /etc/sysctl.d/30-attune.conf
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunecosconfigurefirewall">
+                            <a href="#rhelattunecosconfigurefirewall">
+                                <strong>Step 2.3.7 -</strong> RHEL Attune COS Configure Firewall
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;Removing the default rules from the RHEL6 firewall&quot;
+iptables -F INPUT
+
+echo &quot;&quot; &gt; /etc/sysconfig/iptables
+
+echo &quot;Configure firewall port forwards:&quot;
+sudo firewall-cmd --add-forward-port=port=80:proto=tcp:toport=8000
+sudo firewall-cmd --add-forward-port=port=443:proto=tcp:toport=8001
+sudo firewall-cmd --runtime-to-permanent
+
+sudo firewall-cmd --list-forward-ports
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunecosconfigureselinux">
+                            <a href="#rhelattunecosconfigureselinux">
+                                <strong>Step 2.3.8 -</strong> RHEL Attune COS Configure SELinux
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+#The Attune service fails to write files to /home/attune/attune.home/tmp with SELinux enabled.
+
+sudo sed -i &#x27;s/SELINUX=enforcing/SELINUX=permissive/g&#x27; /etc/sysconfig/selinux
+sudo sed -i &#x27;s/SELINUX=enforcing/SELINUX=permissive/g&#x27; /etc/selinux/config
+sudo setenforce permissive | true
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesetupattuneuser">
+                            <a href="#rhelattunesetupattuneuser">
+                                <strong>Step 2.4 -</strong> RHEL Attune Setup Attune User
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesaucreateattuneuser">
+                            <a href="#rhelattunesaucreateattuneuser">
+                                <strong>Step 2.4.1 -</strong> RHEL Attune SAU Create Attune User
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;Create the attune user if it doesn&#x27;t exist&quot;
+if grep -q attune /etc/passwd
+then
+    echo &quot;Attune user already exists&quot;
+else
+    useradd -m attune
+fi
+
+passwd attune
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>
+            This script may require you to answer the following prompts:
+        </p>
+    </div>
+    <div class="row">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Prompt
+                    </th>
+                    <th class="prompts">
+                        Answer
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        password:
+                    </td>
+                    <td class="prompts">
+                        <code class="language-sql">
+{attuneNodeUserAttune.password}
+                        </code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesauaddsudocommands">
+                            <a href="#rhelattunesauaddsudocommands">
+                                <strong>Step 2.4.2 -</strong> RHEL Attune SAU Add Sudo Commands
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;Setting up attune sudo support&quot;
+
+cat &lt;&lt;EOF &gt; /etc/sudoers.d/attune
+attune        ALL=(ALL)       NOPASSWD: ALL
+EOF
+
+echo &quot;/etc/sudoers.d/attune:&quot;
+
+cat /etc/sudoers.d/attune
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesauchownhomedir">
+                            <a href="#rhelattunesauchownhomedir">
+                                <strong>Step 2.4.3 -</strong> RHEL Attune SAU chown Home Dir
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+chown -R attune:attune ~attune
+
+ls -ltrh /home/
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattuneinstallsrcpythonpostgresql">
+                            <a href="#rhelattuneinstallsrcpythonpostgresql">
+                                <strong>Step 2.5 -</strong> RHEL Attune Install Src Python + PostgreSQL
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunepypgupdatebashprofile">
+                            <a href="#rhelattunepypgupdatebashprofile">
+                                <strong>Step 2.5.1 -</strong> RHEL Attune PYPG Update bash_profile
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Edit ~/.bashrc and append the following to the end of the file.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserattune}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cat &lt;&lt;&quot;EOF&quot;&gt;&gt; ~/.bash_profile
+
+##### SET THE ATTUNE ENVIRONMENT #####
+# Setup the variables for PYTHON and POSTGRESQL
+export ATTUNE_PY_VER=&quot;{pythonVer}&quot;
+export ATTUNE_PG_VER=&quot;{postgresqlVer}&quot;
+export ATTUNE_CMAKE_VER=&quot;{cmakeVer}&quot;
+export ATTUNE_TSDB_VER=&quot;{timescaledbVer}&quot;
+
+export PATH=&quot;$HOME/opt/bin:$PATH&quot;
+export LD_LIBRARY_PATH=&quot;$HOME/opt/lib:$LD_LIBRARY_PATH&quot;
+
+# Set the variables for the platform release
+# These are updated by the deploy script
+export ATTUNE_ENV=&quot;~/python&quot;
+[ -n &quot;${ATTUNE_ENV}&quot; ] &amp;&amp; export PATH=&quot;${ATTUNE_ENV}/bin:$PATH&quot;
+EOF
+
+echo &quot;~/.bash_profile:&quot;
+cat ~/.bash_profile
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneinstallpythonv391">
+                            <a href="#rhelattuneinstallpythonv391">
+                                <strong>Step 2.5.2 -</strong> RHEL Attune Install Python v3.9.1
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipdeploypythonv391">
+                            <a href="#rhelattuneipdeploypythonv391">
+                                <strong>Step 2.5.2.1 -</strong> RHEL Attune IP Deploy Python v3.9.1
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>Offline_Python_31_Source.tar.gz</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/home/attune
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipconfigurebuildinstall">
+                            <a href="#rhelattuneipconfigurebuildinstall">
+                                <strong>Step 2.5.2.2 -</strong> RHEL Attune IP Configure Build Install
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Configure the build</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+ATTUNE_PY_VER={pythonVer}
+
+tar xvzf Python-${ATTUNE_PY_VER}.tgz
+
+cd Python-${ATTUNE_PY_VER}
+./configure --prefix=/home/attune/opt/ --enable-optimizations --enable-shared
+make install
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipcleanup">
+                            <a href="#rhelattuneipcleanup">
+                                <strong>Step 2.5.2.3 -</strong> RHEL Attune IP Cleanup
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rvf Python-${ATTUNE_PY_VER}*
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunecreatesymlinks">
+                            <a href="#rhelattunecreatesymlinks">
+                                <strong>Step 2.5.2.4 -</strong> RHEL Attune Create Symlinks
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd /home/attune/opt/bin
+ln -s --force pip3 pip
+ln -s --force python3 python
+
+ls -ltrh pi*
+
+ls -ltrh pytho*
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipdeploypythonpypis">
+                            <a href="#rhelattuneipdeploypythonpypis">
+                                <strong>Step 2.5.2.5 -</strong> RHEL Attune IP Deploy Python PyPIs
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            <p>https://pypi.org/project/distlib/#files
+https://pypi.org/project/filelock/#files
+https://pypi.org/project/pip/#files
+https://pypi.org/project/platformdirs/#files
+https://pypi.org/project/virtualenv/#files
+https://pypi.org/project/wheel/#files</p>
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>Offline_Python_PyPIs_for_Attune.zip</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/tmp/attune_offline/pypis
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelinstallpythonpypis">
+                            <a href="#rhelinstallpythonpypis">
+                                <strong>Step 2.5.2.6 -</strong> RHEL Install Python Py PIs
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd /tmp/attune_offline/pypis
+
+pip install --find-links=. --no-index distlib*.whl
+
+pip install --find-links=. --no-index filelock*.whl
+
+pip install --find-links=. --no-index pip*.whl
+
+pip install --find-links=. --no-index platformdirs*.whl
+
+pip install --find-links=. --no-index virtualenv*.whl
+
+pip install --find-links=. --no-index wheel*.whl
+
+rm -rf /tmp/attune_offline
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneinstallpostgresqlv125">
+                            <a href="#rhelattuneinstallpostgresqlv125">
+                                <strong>Step 2.5.3 -</strong> RHEL Attune Install PostgreSQL v12.5
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipgdeploypostgresqlv125">
+                            <a href="#rhelattuneipgdeploypostgresqlv125">
+                                <strong>Step 2.5.3.1 -</strong> RHEL Attune IPG Deploy PostgreSQL v12.5
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>PostgreSQL_Source_v125.tar.bz2</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/home/attune
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipgconfigurebuildinstall">
+                            <a href="#rhelattuneipgconfigurebuildinstall">
+                                <strong>Step 2.5.3.2 -</strong> RHEL Attune IPG Configure Build Install
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Configure the build</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+ATTUNE_PG_VER={postgresqlVer}
+
+SRC_DIR=&quot;$HOME/postgresql-${ATTUNE_PG_VER}&quot;
+
+cd ${SRC_DIR}
+
+export CPPFLAGS=&quot; -I`echo $HOME/opt/include/python*m` &quot;
+export LDFLAGS=&quot; -L$HOME/opt/lib &quot;
+
+./configure \
+      --disable-debug \
+      --prefix=$HOME/opt \
+      --enable-thread-safety \
+      --with-openssl \
+      --with-python
+
+
+make -j4 &gt; make.log
+
+make install-world &gt; make-install.log
+
+# this is required for timescale to compile
+cp ${SRC_DIR}/src/test/isolation/pg_isolation_regress ~/opt/bin
+
+# Remove the src dir and install file
+rm -rf ${SRC_DIR}*
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipginitcluster">
+                            <a href="#rhelattuneipginitcluster">
+                                <strong>Step 2.5.3.3 -</strong> RHEL Attune IPG Init Cluster
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+initdb --pgdata=$HOME/pgdata/12 --auth-local=trust  --auth-host=md5
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipgtunepostgresqlconf">
+                            <a href="#rhelattuneipgtunepostgresqlconf">
+                                <strong>Step 2.5.3.4 -</strong> RHEL Attune IPG Tune postgresql.conf
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+F=&quot;$HOME/pgdata/12/postgresql.conf&quot;
+
+sed -i &#x27;s/max_connections = 100/max_connections = 200/g&#x27; $F
+
+# Print the changed line
+grep max_connections $F
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneipginstallservicefile">
+                            <a href="#rhelattuneipginstallservicefile">
+                                <strong>Step 2.5.3.5 -</strong> RHEL Attune IPG Install Service File
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserroot}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+F=/usr/lib/systemd/system/postgresql-12.service
+
+cat &lt;&lt;&quot;EOF&quot; | sed &quot;s,\$HOME,`echo ~{attuneNodeUserAttune.user}`,g&quot; &gt; $F
+[Unit]
+Description=PostgreSQL 12 database server
+After=syslog.target
+After=network.target
+
+[Service]
+Type=forking
+User=attune
+Group=attune
+
+# Location of database directory
+Environment=PGDATA=$HOME/pgdata/12
+
+# Disable OOM kill on the postmaster
+OOMScoreAdjust=-1000
+Environment=PG_OOM_ADJUST_FILE=/proc/self/oom_score_adj
+Environment=PG_OOM_ADJUST_VALUE=0
+
+ExecStart=$HOME/opt/bin/pg_ctl -D ${PGDATA} start
+ExecStop=$HOME/opt/bin/pg_ctl -D ${PGDATA} stop
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=mixed
+KillSignal=SIGINT
+ 
+
+# Do not set any timeout value, so that systemd will not kill postmaster
+# during crash recovery.
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+
+echo &quot;/usr/lib/systemd/system/postgresql-12.service:&quot;
+cat /usr/lib/systemd/system/postgresql-12.service
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneinstallcmakev3192">
+                            <a href="#rhelattuneinstallcmakev3192">
+                                <strong>Step 2.5.4 -</strong> RHEL Attune Install CMake v3.19.2
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneicmdeploycmakev3192">
+                            <a href="#rhelattuneicmdeploycmakev3192">
+                                <strong>Step 2.5.4.1 -</strong> RHEL Attune ICM Deploy CMake v3.19.2
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserattune}@{attunenode}
+                            </code>
+                        </div>
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>CMake_Source_v312.tar.gz</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/home/attune
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneicmconfigurebuildinstall">
+                            <a href="#rhelattuneicmconfigurebuildinstall">
+                                <strong>Step 2.5.4.2 -</strong> RHEL Attune ICM Configure Build Install
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Configure the build</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+ATTUNE_CMAKE_VER={cmakeVer}
+
+SRC_DIR=&quot;$HOME/cmake-${ATTUNE_CMAKE_VER}&quot;
+
+cd ${SRC_DIR}
+
+./configure --prefix=$HOME/opt
+
+
+make -j6 install
+
+# Remove the src dir and install file
+rm -rf ${SRC_DIR}*
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneinstalltimescaledbv174">
+                            <a href="#rhelattuneinstalltimescaledbv174">
+                                <strong>Step 2.5.5 -</strong> RHEL Attune Install TimescaleDB v1.7.4
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneitsinstallgotoolset">
+                            <a href="#rhelattuneitsinstallgotoolset">
+                                <strong>Step 2.5.5.1 -</strong> RHEL Attune ITS Install go-toolset
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserroot}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+dnf module -y install go-toolset
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneitsinstalltimescaledbtune">
+                            <a href="#rhelattuneitsinstalltimescaledbtune">
+                                <strong>Step 2.5.5.2 -</strong> RHEL Attune ITS Install timescaledb-tune
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserattune}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+go install github.com/timescale/timescaledb-tune/cmd/timescaledb-tune@main
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneitsaddtimescaledbtunetopath">
+                            <a href="#rhelattuneitsaddtimescaledbtunetopath">
+                                <strong>Step 2.5.5.3 -</strong> RHEL Attune ITS Add timescaledb-tune to Path
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+TIMESCALE_PATH=&quot;/go/bin&quot;
+
+if grep -q &quot;${TIMESCALE_PATH}&quot; .bash_profile
+then
+    echo &quot;${TIMESCALE_PATH} already exists in ${HOME}/.bash_profile PATH.&quot;
+else
+    echo &quot;Adding ${TIMESCALE_PATH} to .bash_profile PATH.&quot;
+    echo &quot;export PATH=\&quot;\$PATH:${HOME}/go/bin\&quot;&quot; &gt;&gt; .bash_profile
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneitsdeploytimescaledbv174">
+                            <a href="#rhelattuneitsdeploytimescaledbv174">
+                                <strong>Step 2.5.5.4 -</strong> RHEL Attune ITS Deploy TimescaleDB v1.7.4
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            <p>https://github.com/timescale/timescaledb/archive/refs/tags/1.7.4.tar.gz</p>
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>TimescaleDB_Source_v174.tar.gz</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/home/attune
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneitsconfigurebuildinstall">
+                            <a href="#rhelattuneitsconfigurebuildinstall">
+                                <strong>Step 2.5.5.5 -</strong> RHEL Attune ITS Configure Build Install
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Configure the build</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+ATTUNE_TSDB_VER={timescaledbVer}
+
+export CPPFLAGS=`pg_config --cppflags`
+export LDFLAGS=`pg_config --ldflags`
+
+#tar xzf timescaledb-${ATTUNE_TSDB_VER}.tar.gz
+
+SRC_DIR=&quot;$HOME/timescaledb-${ATTUNE_TSDB_VER}&quot;
+
+cd ${SRC_DIR}
+
+
+# Bootstrap the build system
+./bootstrap
+
+# To build the extension
+cd build &amp;&amp; make
+
+# To install
+make install
+
+cd $HOME
+
+#sudo rpm -iv timescaledb-tools*rpm
+
+echo &quot;cleanup installation files!&quot;
+
+rm -rf timescaledb*
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattuneitstunedb">
+                            <a href="#rhelattuneitstunedb">
+                                <strong>Step 2.5.5.6 -</strong> RHEL Attune ITS Tune DB
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+PGVER=12
+FILE=&quot;$HOME/pgdata/${PGVER}/postgresql.conf&quot;
+timescaledb-tune \
+-quiet \
+-yes \
+-conf-path ${FILE} \
+-pg-version ${PGVER} \
+-max-conns=&quot;200&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunestartpostgresql">
+                            <a href="#rhelattunestartpostgresql">
+                                <strong>Step 2.5.6 -</strong> RHEL Attune Start PostgreSQL
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserroot}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl enable postgresql-12 --now
+
+systemctl status postgresql-12
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunecreatepostgresqldb">
+                            <a href="#rhelattunecreatepostgresqldb">
+                                <strong>Step 2.6 -</strong> RHEL Attune Create Postgresql DB
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunepgdbsetsqlpassword">
+                            <a href="#rhelattunepgdbsetsqlpassword">
+                                <strong>Step 2.6.1 -</strong> RHEL Attune PGDB Set SQL Password
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserattune}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+psql -d postgres -U {postgresqlServiceUser.user} &lt;&lt;EOF
+\password
+\q
+EOF
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>
+            This script may require you to answer the following prompts:
+        </p>
+    </div>
+    <div class="row">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Prompt
+                    </th>
+                    <th class="prompts">
+                        Answer
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Enter new password:
+                    </td>
+                    <td class="prompts">
+                        <code class="language-sql">
+{postgresqlServiceUser.password}
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter it again:
+                    </td>
+                    <td class="prompts">
+                        <code class="language-sql">
+{postgresqlServiceUser.password}
+                        </code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunepgdbcreatedatabase">
+                            <a href="#rhelattunepgdbcreatedatabase">
+                                <strong>Step 2.6.2 -</strong> RHEL Attune PGDB Create database
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+createdb -eO {postgresqlServiceUser.user} {postgresqlServiceUser.user}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunepgdbcleanuppsql">
+                            <a href="#rhelattunepgdbcleanuppsql">
+                                <strong>Step 2.6.3 -</strong> RHEL Attune PGDB Cleanup psql
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Cleanup traces of the password</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+[ ! -e ~/.psql_history ] || rm ~/.psql_history
+
+echo &quot;Cleaning psql history...&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesetupattuneconfig">
+                            <a href="#rhelattunesetupattuneconfig">
+                                <strong>Step 2.7 -</strong> RHEL Attune Setup Attune Config
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesacconfigureattunecfg">
+                            <a href="#rhelattunesacconfigureattunecfg">
+                                <strong>Step 2.7.1 -</strong> RHEL Attune SAC Configure Attune CFG
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+[ -d ~/attune.home ] || mkdir ~/attune.home
+SQLPASSWD=$(openssl rand -base64 32 | tr -dc _A-Z-a-z-0-9)
+ADMIN_PASS=&#x27;{linuxAttuneUser.password}&#x27;
+
+if ! grep -q &quot;[disk_storage]&quot; ~/attune.home/config.cfg
+then
+
+    cat &lt;&lt;EOF &gt;&gt; ~/attune.home/config.cfg
+    
+[disk_storage]
+home_path = /home/{linuxAttuneUser.user}/attune.home
+archives_path = %(home_path)s/archives_contents
+tmp_path = %(home_path)s/tmp
+archives_unlocked_contents = %(home_path)s/archives_unlocked_contents
+executions_path = %(home_path)s/historical_jobs
+project_storage_path = %(home_path)s/projects
+
+[alembic]
+# path to migration scripts
+script_location = /home/attune/python/lib/python2.7/site-packages/attune/alembic
+sourceless = true
+sqlalchemy.url = postgresql://{linuxAttuneUser.user}:${SQLPASSWD}@localhost/attune
+
+[user]
+admin.pass = ${ADMIN_PASS}
+
+[http]
+key_file_path =
+cert_file_path =
+http_port = 8000
+
+EOF
+
+else
+    echo &quot;[disk_storage] is already written, skipping.&quot;
+fi
+
+# Set Postgresql Password to the New random password
+psql &lt;&lt;&lt; &quot;alter role attune password &#x27;${SQLPASSWD}&#x27;;&quot;
+echo &quot;Attune PostgreSQL password has been reset&quot;
+
+echo &quot;~/attune.home/config.cfg:&quot;
+cat ~/attune.home/config.cfg
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesacconfiguregit">
+                            <a href="#rhelattunesacconfiguregit">
+                                <strong>Step 2.7.2 -</strong> RHEL Attune SAC Configure GIT
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+git config --global user.email &quot;attune@{attuneNode.fqn}&quot;
+git config --global user.name &quot;Attune&quot;
+
+git config -l
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="attuneplatformvmandkssupport">
+                            <a href="#attuneplatformvmandkssupport">
+                                <strong>Step 2.8 -</strong> Attune Platform VM and KS Support
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesetupbootisosupport">
+                            <a href="#rhelattunesetupbootisosupport">
+                                <strong>Step 2.8.1 -</strong> RHEL Attune Setup Boot ISO Support
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesbsinstalldependencies">
+                            <a href="#rhelattunesbsinstalldependencies">
+                                <strong>Step 2.8.1.1 -</strong> RHEL Attune SBS Install Dependencies
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserroot}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+yum install -y genisoimage
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesetupvcentersupport">
+                            <a href="#rhelattunesetupvcentersupport">
+                                <strong>Step 2.8.2 -</strong> RHEL Attune Setup vCenter Support
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcsinstalllibicu">
+                            <a href="#rhelattunesvcsinstalllibicu">
+                                <strong>Step 2.8.2.1 -</strong> RHEL Attune SVCS Install libicu
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+yum -y install libicu
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcssetuppowershellv624">
+                            <a href="#rhelattunesvcssetuppowershellv624">
+                                <strong>Step 2.8.2.2 -</strong> RHEL Attune SVCS Setup Powershell v6.2.4
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcspowershellv624deploy">
+                            <a href="#rhelattunesvcspowershellv624deploy">
+                                <strong>Step 2.8.2.2.1 -</strong> RHEL Attune SVCSPowershell v6.2.4 Deploy
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            <p>https://github.com/PowerShell/PowerShell/releases</p>
+<p>https://github.com/PowerShell/PowerShell/releases/tag/v6.2.4</p>
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>Powershell_v624.unknown</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/tmp/attune_deploy_rpm_rhelattunesvcsinstallpowershellv624
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcspowershellv624install">
+                            <a href="#rhelattunesvcspowershellv624install">
+                                <strong>Step 2.8.2.2.2 -</strong> RHEL Attune SVCSPowershell v6.2.4 Install
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;Installing RPMs&quot;
+
+# Install the RPMs
+rpm -Uvh --force `find /tmp/attune_deploy_rpm_rhelattunesvcsinstallpowershellv624 -name &quot;*.rpm&quot;`
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcspowershellv624cleanup">
+                            <a href="#rhelattunesvcspowershellv624cleanup">
+                                <strong>Step 2.8.2.2.3 -</strong> RHEL Attune SVCSPowershell v6.2.4 Cleanup
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;Deleting RPMs&quot;
+[ ! -e &quot;/tmp/attune_deploy_rpm_rhelattunesvcsinstallpowershellv624&quot; ] || rm -rf &quot;/tmp/attune_deploy_rpm_rhelattunesvcsinstallpowershellv624&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcsdeployvmwarepowercliv67">
+                            <a href="#rhelattunesvcsdeployvmwarepowercliv67">
+                                <strong>Step 2.8.2.3 -</strong> RHEL Attune SVCS Deploy VMWare.PowerCLI v6.7
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserattune}@{attunenode}
+                            </code>
+                        </div>
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            <p>This was downloaded with :
+sudo pwsh -Command "Save-Module -name VMware.PowerCLI -Path /root"</p>
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>VMWarePowerCLI_v67.tar</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+.local/share/powershell/Modules, relative to the home directory
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesvcstestvmwarepowercli">
+                            <a href="#rhelattunesvcstestvmwarepowercli">
+                                <strong>Step 2.8.2.4 -</strong> RHEL Attune SVCS Test VMWare.PowerCLI
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+pwsh &lt;&lt;&#x27;EOF&#x27;
+$ErrorActionPreference = &quot;Stop&quot;
+Import-Module VMware.VimAutomation.Core
+Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false -Confirm:$false
+Set-PowerCLIConfiguration -InvalidCertificateAction ignore -Confirm:$false
+
+EOF
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesetupovirtsupport">
+                            <a href="#rhelattunesetupovirtsupport">
+                                <strong>Step 2.8.3 -</strong> RHEL Attune Setup oVirt Support
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesovsinstallpython3">
+                            <a href="#rhelattunesovsinstallpython3">
+                                <strong>Step 2.8.3.1 -</strong> RHEL Attune SOVS Install Python3
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserroot}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+yum install -y gcc libxml2-devel nss-devel python3-devel python3 virtualenv
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhelattunesovscreatevirtualenv">
+                            <a href="#rhelattunesovscreatevirtualenv">
+                                <strong>Step 2.8.3.2 -</strong> RHEL Attune SOVS Create Virtualenv
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {attunenodeuserattune}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+virtualenv -p `which python3` ks_ovirt_py_venv
+
+export PATH=~/ks_ovirt_py_venv/bin:$PATH
+
+pip install --no-cache-dir --compile --ignore-installed --install-option=&quot;--with-nss&quot; pycurl
+pip3 install ovirt-engine-sdk-python
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhel8addonhypervsupport">
+                            <a href="#rhel8addonhypervsupport">
+                                <strong>Step 2.8.4 -</strong> RHEL8 Add-On Hyper-V Support
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="rhel8installgssntlmssplink">
+                            <a href="#rhel8installgssntlmssplink">
+                                <strong>Step 2.8.4.1 -</strong> RHEL8 Install gssntlmssp (link)
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h5 id="attunev5setupwinpesupportrhel8link">
+                            <a href="#attunev5setupwinpesupportrhel8link">
+                                <strong>Step 2.8.5 -</strong> Attune v5 Setup WinPE Support RHEL8 (link)
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="installattunev5software">
+                            <a href="#installattunev5software">
+                                <strong>Step 3 -</strong> Install Attune v5 Software
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesasremoveattunerelease">
+                            <a href="#rhelattunesasremoveattunerelease">
+                                <strong>Step 3.1 -</strong> RHEL Attune SAS Remove Attune Release
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+DIR=&quot;synerty-attune-v*&quot;
+
+[ -d ${DIR} ] || echo &quot;Nothing to cleanup!&quot;
+
+[ ! ${DIR} ] || sudo rm -rfv ${DIR}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesasdeployattunev5">
+                            <a href="#rhelattunesasdeployattunev5">
+                                <strong>Step 3.2 -</strong> RHEL Attune SAS Deploy Attune v5
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>Attune_Release_v5.tar.bz2</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/home/attune
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesaskillattune">
+                            <a href="#rhelattunesaskillattune">
+                                <strong>Step 3.3 -</strong> RHEL Attune SAS Kill Attune
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo systemctl stop attune || true
+
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Killing Attune&quot;
+    pkill -9 -f run_attune_server
+else
+    echo &quot;Attune has stopped&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesasremovevirtualenv">
+                            <a href="#rhelattunesasremovevirtualenv">
+                                <strong>Step 3.4 -</strong> RHEL Attune SAS Remove Virtualenv
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if ls -d ~/python 2&gt;&amp;1 &gt; /dev/null ;then
+    echo &quot;Removing Virtualenv&quot;
+    rm -rf ~/python
+else
+    echo &quot;Python is already removed&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesascreatevirtualenv">
+                            <a href="#rhelattunesascreatevirtualenv">
+                                <strong>Step 3.5 -</strong> RHEL Attune SAS Create Virtualenv
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+which virtualenv
+if [ &quot;/home/attune/opt/bin/virtualenv&quot; == `which virtualenv` ]; then
+    echo &quot;SUCCESS, this is the right virtualenv&quot;
+else
+    echo &quot;This isn&#x27;t the right virtualenv&quot;
+    false
+fi
+
+virtualenv ~/python
+
+which python
+if [ &quot;/home/attune/python/bin/python&quot; == `which python` ]; then
+    echo &quot;SUCCESS, this is the right python&quot;
+else
+    echo &quot;This isn&#x27;t the right python&quot;
+    false
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesasinstallattune">
+                            <a href="#rhelattunesasinstallattune">
+                                <strong>Step 3.6 -</strong> RHEL Attune SAS Install Attune
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ &quot;/home/attune/python/bin/pip&quot; == `which pip` ]; then
+    echo &quot;SUCCESS, this is the right pip&quot;
+else
+    echo &quot;This isn&#x27;t the right pip&quot;
+    false
+fi
+
+
+cd synerty-attune-v*-release
+
+# Deploy the software
+pip install --no-index --no-cache  --find-links=py py/attune-*.whl
+
+# Install the init script
+sed -i -e &#x27;s%#ATTUNE_HOME#%/home/attune%&#x27; init/attune.service
+sudo cp init/attune.service /lib/systemd/system/
+
+# Reload systemctl
+sudo systemctl daemon-reload
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesasstartattuneservice">
+                            <a href="#rhelattunesasstartattuneservice">
+                                <strong>Step 3.7 -</strong> RHEL Attune SAS Start Attune Service
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Check if attune is running
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Attune is running, it should already be stopped.&quot;
+    false
+fi
+
+echo &quot;Removing old logs&quot;
+[ ! -f ~/attune.home/attune.log ] || rm ~/attune.home/attune.log
+
+echo &quot;Restarting PostgreSQL and Attune&quot;
+sudo systemctl restart postgresql-12
+sudo systemctl restart attune
+
+# Wiat for Attune to start
+sleep 20s
+
+# Check if attune is running
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Attune is running, GREAT.&quot;
+else
+    echo &quot;Attune has failed to start&quot; &gt;&amp;2
+    tail -n50 ~/attune.home/attune.log
+    false
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattuneenableattune">
+                            <a href="#rhelattuneenableattune">
+                                <strong>Step 3.8 -</strong> RHEL Attune Enable Attune
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo systemctl enable attune
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesaswaitforattunetomigrate">
+                            <a href="#rhelattunesaswaitforattunetomigrate">
+                                <strong>Step 3.9 -</strong> RHEL Attune SAS Wait for Attune to Migrate
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+isAttuneAlive() {
+    grep -ci &#x27;Attune is alive and listening&#x27; ~/attune.home/attune.log
+}
+
+while [ $(isAttuneAlive) -lt 1 ]
+do
+    # echo &quot;Waiting for Attune to migrate&quot;
+    tail -1 ~/attune.home/attune.log \
+        | cut -d&#x27;:&#x27; -f4-
+    sleep 30s
+done
+
+echo &quot;Attune has completed migrating and is ready for browser access&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="rhelattunesasremoveattunerelease">
+                            <a href="#rhelattunesasremoveattunerelease">
+                                <strong>Step 3.10 -</strong> RHEL Attune SAS Remove Attune Release
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+DIR=&quot;synerty-attune-v*&quot;
+
+[ -d ${DIR} ] || echo &quot;Nothing to cleanup!&quot;
+
+[ ! ${DIR} ] || sudo rm -rfv ${DIR}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="addontwistdforkickstartdirectory">
+                            <a href="#addontwistdforkickstartdirectory">
+                                <strong>Step 4 -</strong> Add-On Twistd for kickstart Directory
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>SYNSO-300: This is for Hyper-V to pull kickstarts from.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtcheckiftwistdisinstalled">
+                            <a href="#adtcheckiftwistdisinstalled">
+                                <strong>Step 4.1 -</strong> ADT Check if twistd is Installed
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+which twistd
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtdeployrunhttpisosh">
+                            <a href="#adtdeployrunhttpisosh">
+                                <strong>Step 4.2 -</strong> ADT Deploy run_httpiso.sh
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>run_httpisosh.tar</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+$HOME, relative to the home directory
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtsetpermissionsforrunhttpisosh">
+                            <a href="#adtsetpermissionsforrunhttpisosh">
+                                <strong>Step 4.3 -</strong> ADT Set Permissions for run_httpiso.sh
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+chmod a+x run_httpiso.sh
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtpushhttpisoservice">
+                            <a href="#adtpushhttpisoservice">
+                                <strong>Step 4.4 -</strong> ADT Push httpiso.service
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneserver}
+                            </code>
+                        </div>
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>httpisoservice.tar</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+/usr/lib/systemd/system/
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtreloadsystemd">
+                            <a href="#adtreloadsystemd">
+                                <strong>Step 4.5 -</strong> ADT Reload Systemd
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl daemon-reload
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtstartandenablehttpiso">
+                            <a href="#adtstartandenablehttpiso">
+                                <strong>Step 4.6 -</strong> ADT Start and Enable httpiso
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl enable --now httpiso
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="adtopenport8050onfirewalld">
+                            <a href="#adtopenport8050onfirewalld">
+                                <strong>Step 4.7 -</strong> ADT Open Port 8050 on firewalld
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+firewall-cmd --zone=public --add-port=8050/tcp
+firewall-cmd --zone=public --add-port=8050/tcp
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h2>Completed</h2>
+                            <p>
+                                You have completed this instruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Download Attune Ad -->
+
+            <div class="toc col-lg-2 px-0">
+                <div class="container px-0 pt-3 pl-5">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body attune-ad">
+                            <img
+                                src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                                alt="Attune - Powered by ServerTribe"
+                                class="img-fluid">
+                            <p class="card-title mt-3 text-center">
+                                <strong>Automate with Attune</strong>
+                            </p>
+                            <p class="card-text text-center">
+                                Download the Attune Community Edition.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.servertribe.com/download-attune-registration/"
+                                   class="btn btn-primary mt-3">
+                                    DOWNLOAD!!!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Join Discord -->
+
+        <div class="row py-5">
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">
+                  Discuss this Project in Discord
+              </h1>
+              <p class="lead">
+
+                  Join our Discord channel and connect with like-minded individuals who
+                  share your passion. Engage in lively discussions, gain valuable insights,
+                  and stay updated on the latest trends in our industry. Don't miss out on
+                  this opportunity to network, learn, and grow together.
+              </p>
+              <hr class="my-4 text-center">
+                <div class="col px-0">
+                  <p class="text-center">
+                      Click the link below and become a part of our vibrant community on
+                      Discord today!
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://discord.com/invite/3YpJsagqUn"
+                       role="button">
+                        Join NOW!!!
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Project Footer -->
+
+<footer class="footer fixed-bottom bg-white border-top box-shadow">
+      <div class="container px-0">
+          <div class="row">
+              <div class="col px-0">
+                  <a class="my-0 mr-lg-auto"
+                     href="https://www.servertribe.com/"
+                     target="_blank">
+                      <img
+                          src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                          alt="Attune - Powered by ServerTribe"
+                          class="img-fluid navbar-img">
+                  </a>
+              </div>
+          </div>
+      </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+</body>
+</html>

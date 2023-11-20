@@ -1,0 +1,6 @@
+
+#The Attune service fails to write files to /home/attune/attune.home/tmp with SELinux enabled.
+
+sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig/selinux
+sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+sudo setenforce permissive | true

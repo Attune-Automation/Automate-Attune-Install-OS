@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "90987e18-70a9-40ec-94a6-6cd9ecc41ddd", 
+    "key": "httpisoservice", 
+    "name": "httpiso.service", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

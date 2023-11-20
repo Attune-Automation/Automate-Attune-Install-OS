@@ -1,0 +1,29 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "rhelyumrepos", 
+    "deployPath": "/", 
+    "enabled": true, 
+    "externalUuid4": "c91df897-9c7a-4f4a-ab32-f0e68041a747", 
+    "key": "rhelsetuprpmmirrors", 
+    "makoFileNames": [
+        "etc/yum.repos.d/rhel-8-for-x86_64-baseos-rpms.repo", 
+        "etc/yum.repos.d/rhel-8-for-x86_64-appstream-rpms.repo", 
+        "etc/yum.repos.d/codeready-builder-for-rhel-8-x86_64-rpms.repo"
+    ], 
+    "makoParameters": [
+        {
+            "name": "rpmMirror", 
+            "parameterKey": "rpmmirror", 
+            "parameterType": "c.s.s.b.phv.LinuxServer"
+        }, 
+        {
+            "name": "rpmMirrorsEnabled", 
+            "parameterKey": "rpmmirrorsenabled", 
+            "parameterType": "c.s.s.b.phv.Text"
+        }
+    ], 
+    "name": "RHEL Setup RPM Mirrors", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileCompiledTuple"
+}

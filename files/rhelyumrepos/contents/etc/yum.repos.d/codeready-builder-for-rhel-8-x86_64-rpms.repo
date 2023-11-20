@@ -1,0 +1,5 @@
+[codeready-builder-for-rhel-8-x86_64-rpms]
+name=Internal RPM Server (codeready-builder-for-rhel-8-x86_64-rpms)
+baseurl=http://${rpmMirror.ip}/rpm_mirror/codeready-builder-for-rhel-8-x86_64-rpms/
+enabled=${rpmMirrorsEnabled}
+gpgcheck=0

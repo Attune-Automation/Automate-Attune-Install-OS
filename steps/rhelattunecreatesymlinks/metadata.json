@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "7de6a919-b120-4a74-b3a6-d4566204c9f4", 
+    "interpreter": 1, 
+    "key": "rhelattunecreatesymlinks", 
+    "name": "RHEL Attune Create Symlinks", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

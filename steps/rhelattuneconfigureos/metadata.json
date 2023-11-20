@@ -1,0 +1,44 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "95aed56a-f96b-4711-bc35-774bf546c54b", 
+    "isBlueprint": false, 
+    "key": "rhelattuneconfigureos", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rheldeploynetworkconfigfiles"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "rhelfixnetworkconfigfilepermissions"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "rhelsethostname"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "rheldisableipv6"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "rhelupdatednsservers"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "rhelattunecosincreasingopenfilelimits"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "rhelattunecosconfigurefirewall"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "rhelattunecosconfigureselinux"
+        }
+    ], 
+    "name": "RHEL Attune Configure OS", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

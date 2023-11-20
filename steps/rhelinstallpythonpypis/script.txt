@@ -1,0 +1,15 @@
+cd /tmp/attune_offline/pypis
+
+pip install --find-links=. --no-index distlib*.whl
+
+pip install --find-links=. --no-index filelock*.whl
+
+pip install --find-links=. --no-index pip*.whl
+
+pip install --find-links=. --no-index platformdirs*.whl
+
+pip install --find-links=. --no-index virtualenv*.whl
+
+pip install --find-links=. --no-index wheel*.whl
+
+rm -rf /tmp/attune_offline

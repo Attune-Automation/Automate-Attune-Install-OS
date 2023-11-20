@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "da950a6b-34bf-4cfe-82cc-49305fa7a360", 
+    "interpreter": 1, 
+    "key": "rhelattunepgdbcreatedatabase", 
+    "name": "RHEL Attune PGDB Create database", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,0 +1,7 @@
+ATTUNE_PY_VER={pythonVer}
+
+tar xvzf Python-${ATTUNE_PY_VER}.tgz
+
+cd Python-${ATTUNE_PY_VER}
+./configure --prefix=/home/attune/opt/ --enable-optimizations --enable-shared
+make install

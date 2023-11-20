@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "b24583c5-7b97-4f8e-989a-b49954d4d44d", 
+    "interpreter": 1, 
+    "key": "rhelcleanupdownloadedpackages", 
+    "name": "RHEL Cleanup Downloaded Packages", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "194ac415-4188-4964-b4e9-b18105bc252c", 
+    "key": "etcconfigs", 
+    "name": "etc Configs", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

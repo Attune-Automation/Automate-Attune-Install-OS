@@ -1,0 +1,10 @@
+PKG="libjpeg-turbo-devel"
+PKG="$PKG zlib-devel"
+PKG="$PKG libtiff-devel"
+PKG="$PKG libwebp-devel"
+PKG="$PKG openjpeg2-devel"
+PKG="$PKG libtiff-devel"
+PKG="$PKG freetype-devel"
+PKG="$PKG lcms2-devel"
+
+sudo yum install -y $PKG

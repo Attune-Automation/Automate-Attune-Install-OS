@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "fc169b0f-cac0-4c54-b42b-f75fe0825520", 
+    "interpreter": 1, 
+    "key": "rhelattunesovscreatevirtualenv", 
+    "name": "RHEL Attune SOVS Create Virtualenv", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "badaa3e4-f0c4-481c-9d73-7c8a3a326532", 
+    "interpreter": 1, 
+    "key": "rhelattunecosconfigurefirewall", 
+    "name": "RHEL Attune COS Configure Firewall", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

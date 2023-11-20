@@ -1,0 +1,13 @@
+isAttuneAlive() {
+    grep -ci 'Attune is alive and listening' ~/attune.home/attune.log
+}
+
+while [ $(isAttuneAlive) -lt 1 ]
+do
+    # echo "Waiting for Attune to migrate"
+    tail -1 ~/attune.home/attune.log \
+        | cut -d':' -f4-
+    sleep 30s
+done
+
+echo "Attune has completed migrating and is ready for browser access"

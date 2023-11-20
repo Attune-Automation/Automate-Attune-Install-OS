@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "1c3d7e95-62d1-464b-bac2-183ed4717838", 
+    "interpreter": 1, 
+    "key": "rhelattuneitsconfigurebuildinstall", 
+    "name": "RHEL Attune ITS Configure Build Install", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

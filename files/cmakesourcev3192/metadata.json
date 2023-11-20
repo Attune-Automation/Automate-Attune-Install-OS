@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "e9645dfa-f5a9-4b91-851a-3cfe9f477959", 
+    "fileName": "cmake-3.19.2.tar.gz", 
+    "formatKey": "tar.gz", 
+    "key": "cmakesourcev3192", 
+    "md5": "043d47c9a37755f3da1e8c1123e1a2dd", 
+    "name": "CMake Source v3.19.2", 
+    "remoteUri": "https://cmake.org/files/v3.19/cmake-3.19.2.tar.gz", 
+    "size": 9264414, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

@@ -1,0 +1,28 @@
+# Do not remove the following line, or various programs
+# that require network functionality will fail.
+127.0.0.1               localhost.localdomain localhost
+
+# Define this server
+${attuneNode.ip}    ${attuneNode.hostname} ${attuneNode.fqn}
+
+<%
+    sortedList = list(sorted(environmentServers.servers,
+                      key = lambda x: x.hostname))
+                      
+    sortedTimeServers = list(sorted(timeServers.servers, 
+                      key = lambda y: y.hostname))
+%>
+
+# Define the servers in ${environmentServers.name}
+% for server in sortedList:
+% if server.hostname != attuneNode.hostname:
+${server.ip}    ${server.hostname} ${server.fqn}
+% endif
+% endfor
+
+# Time Servers
+% for ts in sortedTimeServers:
+% if ts.hostname != attuneNode.hostname:
+${ts.ip}    ${ts.hostname} ${ts.fqn}
+% endif
+% endfor

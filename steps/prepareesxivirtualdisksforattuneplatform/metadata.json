@@ -1,0 +1,16 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "70fbebdb-16e6-49e5-a3b1-f6b85f3624af", 
+    "isBlueprint": false, 
+    "key": "prepareesxivirtualdisksforattuneplatform", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesdvmwareaddvirtualdisks"
+        }
+    ], 
+    "name": "Prepare ESXi Virtual Disks for Attune Platform", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

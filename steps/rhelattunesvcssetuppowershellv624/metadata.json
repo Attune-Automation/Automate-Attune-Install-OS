@@ -1,0 +1,24 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "3c570844-dca7-4e3a-8e3f-aaf5c2f5ed63", 
+    "isBlueprint": false, 
+    "key": "rhelattunesvcssetuppowershellv624", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhelattunesvcspowershellv624deploy"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "rhelattunesvcspowershellv624install"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "rhelattunesvcspowershellv624cleanup"
+        }
+    ], 
+    "name": "RHEL Attune SVCS Setup Powershell v6.2.4", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

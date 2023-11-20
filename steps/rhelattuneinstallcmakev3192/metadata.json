@@ -1,0 +1,20 @@
+{
+    "actionOnStepFail": null, 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "20df05fa-4618-4b55-a2b5-5837ed236cf4", 
+    "isBlueprint": false, 
+    "key": "rhelattuneinstallcmakev3192", 
+    "links": [
+        {
+            "order": 40, 
+            "stepKey": "rhelattuneicmdeploycmakev3192"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "rhelattuneicmconfigurebuildinstall"
+        }
+    ], 
+    "name": "RHEL Attune Install CMake v3.19.2", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

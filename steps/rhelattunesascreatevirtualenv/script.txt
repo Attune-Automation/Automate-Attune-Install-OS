@@ -1,0 +1,18 @@
+
+which virtualenv
+if [ "/home/attune/opt/bin/virtualenv" == `which virtualenv` ]; then
+    echo "SUCCESS, this is the right virtualenv"
+else
+    echo "This isn't the right virtualenv"
+    false
+fi
+
+virtualenv ~/python
+
+which python
+if [ "/home/attune/python/bin/python" == `which python` ]; then
+    echo "SUCCESS, this is the right python"
+else
+    echo "This isn't the right python"
+    false
+fi

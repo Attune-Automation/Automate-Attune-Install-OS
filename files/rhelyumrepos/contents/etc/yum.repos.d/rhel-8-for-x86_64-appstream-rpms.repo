@@ -1,0 +1,5 @@
+[rhel-8-for-x86_64-appstream-rpms]
+name=Internal RPM Server (rhel-8-for-x86_64-appstream-rpms)
+baseurl=http://${rpmMirror.ip}/rpm_mirror/rhel-8-for-x86_64-appstream-rpms/
+enabled=${rpmMirrorsEnabled}
+gpgcheck=0

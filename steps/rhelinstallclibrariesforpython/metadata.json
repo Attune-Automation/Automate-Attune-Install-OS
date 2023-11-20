@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "4ee38790-5ae2-4b45-a15a-6371853fcfbf", 
+    "interpreter": 1, 
+    "key": "rhelinstallclibrariesforpython", 
+    "name": "RHEL Install C Libraries for Python", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

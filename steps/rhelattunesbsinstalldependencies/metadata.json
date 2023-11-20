@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "ff482f36-5a67-4da5-b9d1-38232d447bbb", 
+    "interpreter": 1, 
+    "key": "rhelattunesbsinstalldependencies", 
+    "name": "RHEL Attune SBS Install Dependencies", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

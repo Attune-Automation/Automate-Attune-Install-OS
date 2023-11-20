@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "c85b724b-a973-474a-9a5f-4f67cb999ab0", 
+    "interpreter": 1, 
+    "key": "rhelupdatednsservers", 
+    "name": "RHEL Update DNS Servers", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

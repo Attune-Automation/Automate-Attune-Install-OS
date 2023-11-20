@@ -1,0 +1,9 @@
+echo "Setting up attune sudo support"
+
+cat <<EOF > /etc/sudoers.d/attune
+attune        ALL=(ALL)       NOPASSWD: ALL
+EOF
+
+echo "/etc/sudoers.d/attune:"
+
+cat /etc/sudoers.d/attune

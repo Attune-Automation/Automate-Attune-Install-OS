@@ -1,0 +1,3 @@
+PKG="libaio libaio-devel"
+
+sudo yum install -y $PKG

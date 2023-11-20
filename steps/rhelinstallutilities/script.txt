@@ -1,0 +1,3 @@
+PKG="net-tools git unzip bzip2 rsync telnet wireshark nano ftp"
+
+sudo yum install -y $PKG

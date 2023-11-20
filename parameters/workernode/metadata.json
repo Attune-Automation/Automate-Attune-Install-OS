@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "d66f4b42-a0e6-4827-b479-09b481dabd9c", 
+    "key": "workernode", 
+    "name": "Worker Node", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.LinuxServer"
+}

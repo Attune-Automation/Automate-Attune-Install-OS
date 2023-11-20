@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "44d064c3-eb0a-48bd-af8e-23b5b752b852", 
+    "interpreter": 1, 
+    "key": "rhelattunesasinstallattune", 
+    "name": "RHEL Attune SAS Install Attune", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

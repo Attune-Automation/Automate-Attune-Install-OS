@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "ecff10cb-329c-45a6-be41-ab6b0daa6bd3", 
+    "fileName": "PYPIs.zip", 
+    "formatKey": "zip", 
+    "key": "offlinepythonpypisforattune", 
+    "md5": "34c4b3b6622a1baf571eced441322547", 
+    "name": "Offline Python PyPIs for Attune", 
+    "remoteUri": null, 
+    "size": 20145526, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

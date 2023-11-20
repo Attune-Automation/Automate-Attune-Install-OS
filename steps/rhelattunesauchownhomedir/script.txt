@@ -1,0 +1,3 @@
+chown -R attune:attune ~attune
+
+ls -ltrh /home/

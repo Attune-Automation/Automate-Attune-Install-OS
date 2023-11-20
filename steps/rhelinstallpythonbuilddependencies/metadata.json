@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "8e947a12-d52d-4cf2-a36c-8a78ee6dadd6", 
+    "interpreter": 1, 
+    "key": "rhelinstallpythonbuilddependencies", 
+    "name": "RHEL Install Python Build Dependencies", 
+    "osCredKey": "attunenodeuserroot", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

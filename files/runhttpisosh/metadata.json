@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "6ba89822-4dfb-416d-a7ac-82c53c23d25e", 
+    "key": "runhttpisosh", 
+    "name": "run_httpiso.sh", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

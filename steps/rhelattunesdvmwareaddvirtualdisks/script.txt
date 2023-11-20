@@ -1,0 +1,18 @@
+# Create the virtual disk
+
+pwsh <<'EOF'
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterServer.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+
+$vm = Get-VM "{attuneNode.fqn}"
+
+# Add 200gb
+$vm | New-HardDisk -CapacityGB 100 -StorageFormat Thin
+$vm | New-HardDisk -CapacityGB 100 -StorageFormat Thin
+$vm | New-HardDisk -CapacityGB 100 -StorageFormat Thin
+
+EOF

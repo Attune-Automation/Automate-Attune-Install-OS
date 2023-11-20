@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "e7a54351-af42-4c09-9b2f-232cffe58253", 
+    "interpreter": 1, 
+    "key": "rhelinstallpythonpypis", 
+    "name": "RHEL Install Python Py PIs", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

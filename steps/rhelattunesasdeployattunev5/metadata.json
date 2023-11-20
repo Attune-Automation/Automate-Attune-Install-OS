@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "attunereleasev5", 
+    "deployPath": "/home/attune", 
+    "enabled": true, 
+    "externalUuid4": "5a651818-ccc8-4bef-9431-1e82a9fb4f3a", 
+    "key": "rhelattunesasdeployattunev5", 
+    "name": "RHEL Attune SAS Deploy Attune v5", 
+    "osCredKey": "attunenodeuserattune", 
+    "serverKey": "attunenode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}
