@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": "stop", 
+    "enabled": true, 
+    "externalUuid4": "0f5b8b4b-2eea-4014-92d1-132dd2ed61f2", 
+    "interpreter": 1, 
+    "key": "rhel8dnfupdateall", 
+    "name": "RHEL8 dnf Update All ", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

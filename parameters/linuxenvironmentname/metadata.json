@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "a04a02e1-27f4-493f-bf9e-c96eecab953a", 
+    "key": "linuxenvironmentname", 
+    "name": "Linux: Environment Name", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

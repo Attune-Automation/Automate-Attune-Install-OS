@@ -1,0 +1,20 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "0d3d0b05-9940-4e1b-bd06-c8668a10020f", 
+    "isBlueprint": false, 
+    "key": "installgssntlmssponlinuxworker", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "rhel8dnfupdateall"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "r8iginstallgssntlmssp"
+        }
+    ], 
+    "name": "Install gssntlmssp on Linux Worker", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

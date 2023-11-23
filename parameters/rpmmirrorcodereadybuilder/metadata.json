@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "ce72b186-26f0-4f81-b4b1-f47ac5567b18", 
+    "key": "rpmmirrorcodereadybuilder", 
+    "name": "RPM Mirror Codeready Builder", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

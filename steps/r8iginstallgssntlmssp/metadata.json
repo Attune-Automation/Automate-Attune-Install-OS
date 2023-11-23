@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "ddf98c16-11bc-4b61-8a7b-8c312cce14f8", 
+    "interpreter": 1, 
+    "key": "r8iginstallgssntlmssp", 
+    "name": "R8IG Install gssntlmssp", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

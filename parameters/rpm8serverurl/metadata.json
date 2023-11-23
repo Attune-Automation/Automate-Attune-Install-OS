@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "a156c328-a2aa-4160-9cbc-b7bd1f852d63", 
+    "key": "rpm8serverurl", 
+    "name": "RPM8 Server URL", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

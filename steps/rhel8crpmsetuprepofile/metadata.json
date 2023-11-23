@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "4b2c6e94-668d-479a-a7b3-b1088aa149e7", 
+    "interpreter": 1, 
+    "key": "rhel8crpmsetuprepofile", 
+    "name": "RHEL8 CRPM Setup Repo File", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

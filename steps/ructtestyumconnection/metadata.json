@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "f5006d36-1941-4d2b-bb20-7b9ad29efabe", 
+    "interpreter": 1, 
+    "key": "ructtestyumconnection", 
+    "name": "RUCT Test Yum Connection", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

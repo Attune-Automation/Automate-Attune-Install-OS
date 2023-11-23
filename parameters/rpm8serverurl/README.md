@@ -1,0 +1,1 @@
+Example https://rpmhost/rpm_mirror

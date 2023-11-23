@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "2974bb4a-a11a-412f-b014-9dc5c74dc62c", 
+    "interpreter": 1, 
+    "key": "rhel8crpmyumupdatesecuritypackages", 
+    "name": "RHEL8 CRPM Yum Update Security Packages", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

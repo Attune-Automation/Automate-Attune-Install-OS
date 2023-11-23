@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "6fadc756-bb0c-4849-8728-048903ec7d1f", 
+    "key": "adrootcacertificate", 
+    "name": "AD Root CA certificate", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

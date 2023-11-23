@@ -1,0 +1,16 @@
+FROM="{targetServerInstallerTmpPath}/cacerts"
+TO=/etc/pki/ca-trust/source/anchors/
+
+update-ca-trust enable
+
+cd ${FROM}
+for F in *
+do
+    mv -fv ${F} ${TO}
+done
+
+echo "Installing the CA certificates"
+update-ca-trust extract
+
+cd
+rm -rfv ${FROM}

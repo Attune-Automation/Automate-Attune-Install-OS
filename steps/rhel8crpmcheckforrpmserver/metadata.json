@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "e8494193-e2e1-4251-84c1-c338bdfa0a21", 
+    "interpreter": 1, 
+    "key": "rhel8crpmcheckforrpmserver", 
+    "name": "RHEL8 CRPM Check for RPM Server", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

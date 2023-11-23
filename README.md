@@ -73,6 +73,9 @@ This is for OS installs to download ISOs from HTTP.
 ### Setup WinPE Support on Linux Worker
 
 
+### RHEL Update CA Trust
+
+
 
 
 
@@ -84,6 +87,17 @@ This is for OS installs to download ISOs from HTTP.
 | Automation Worker Linux Node | Linux/Unix Node | `automationworkerlinuxnode` | The Linux automation worker node used to perform tasks to create the ISO. |
 | Automation Worker Linux User | Linux/Unix Credential | `automationworkerlinuxuser` |  |
 | Automation Worker Linux User: root | Linux/Unix Credential | `automationworkerlinuxuserroot` | root user on the Linux Automation Worker node. |
+| RPM Mirror Appstream | Text | `rpmmirrorappstream` |  |
+| RPM Mirror Baseos | Text | `rpmmirrorbaseos` |  |
+| Smtp Server | Basic Node | `smtpserver` | This placeholder represents the SMTP smart host server where all mail will be sent to.<br>The SMTP smart host then sends the mail where it needs to go. |
+| RPM8 Server URL | Text | `rpm8serverurl` | Example https://rpmhost/rpm_mirror |
+| Linux: Prompt Color | Text | `linuxpromptcolor` |  |
+| Target Server: Installer Tmp Path | Text | `targetserverinstallertmppath` | The temporary path used for installers that need to be copied to the server then installed. |
+| Hosts File Servers | Node List | `hostsfileservers` | The servers in this group are added to the hosts file for this server being built |
+| Linux: Environment Name | Text | `linuxenvironmentname` |  |
+| Kickstart Organisation Name | Text | `kickstartorganisationname` |  |
+| RPM Mirror Codeready Builder | Text | `rpmmirrorcodereadybuilder` |  |
+| RPM Mirror Extras | Text | `rpmmirrorextras` |  |
 
 
 
@@ -96,6 +110,8 @@ This is for OS installs to download ISOs from HTTP.
 | Powershell v6.2.4 | Large Archives | https://github.com/PowerShell/PowerShell/releases<br><br>https://github.com/PowerShell/PowerShell/releases/tag/v6.2.4 |
 | run_httpiso.sh | Version Controlled Files |  |
 | VMWare.PowerCLI v6.7 | Large Archives | This was downloaded with :<br>sudo pwsh -Command "Save-Module -name VMware.PowerCLI -Path /root" |
+| RHEL8 etc Configs | Version Controlled Files |  |
+| AD Root CA certificate | Version Controlled Files | This is the root CA certificate from the Windows certificate authority server. Used for all SSL security procedures and SSL to the RPM servers. |
 
 
 

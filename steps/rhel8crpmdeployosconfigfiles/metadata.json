@@ -1,0 +1,50 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "rhel8etcconfigs", 
+    "deployPath": "/etc", 
+    "enabled": true, 
+    "externalUuid4": "4aa658ec-27a0-4304-a13b-2cd7e5ca6b47", 
+    "key": "rhel8crpmdeployosconfigfiles", 
+    "makoFileNames": [
+        "sysconfig/network", 
+        "profile.d/environment_prompt.sh", 
+        "login_banner", 
+        "hosts"
+    ], 
+    "makoParameters": [
+        {
+            "name": "utility", 
+            "parameterKey": "kickstartorganisationname", 
+            "parameterType": "c.s.s.b.phv.Text"
+        }, 
+        {
+            "name": "linuxEnvironmentName", 
+            "parameterKey": "linuxenvironmentname", 
+            "parameterType": "c.s.s.b.phv.Text"
+        }, 
+        {
+            "name": "smtpServer", 
+            "parameterKey": "smtpserver", 
+            "parameterType": "c.s.s.b.phv.Server"
+        }, 
+        {
+            "name": "targetEnvironmentServers", 
+            "parameterKey": "hostsfileservers", 
+            "parameterType": "c.s.s.b.phv.ServerList"
+        }, 
+        {
+            "name": "linuxPromptColor", 
+            "parameterKey": "linuxpromptcolor", 
+            "parameterType": "c.s.s.b.phv.Text"
+        }, 
+        {
+            "name": "targetServer", 
+            "parameterKey": "automationworkerlinuxnode", 
+            "parameterType": "c.s.s.b.phv.LinuxServer"
+        }
+    ], 
+    "name": "RHEL8 CRPM Deploy OS Config Files", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileCompiledTuple"
+}

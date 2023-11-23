@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "7d20a9bf-cf47-431d-9c93-4f6d80781dfc", 
+    "key": "rpmmirrorbaseos", 
+    "name": "RPM Mirror Baseos", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

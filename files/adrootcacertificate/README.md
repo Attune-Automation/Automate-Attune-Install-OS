@@ -1,0 +1,1 @@
+This is the root CA certificate from the Windows certificate authority server. Used for all SSL security procedures and SSL to the RPM servers.

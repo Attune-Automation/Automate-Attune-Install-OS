@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "1bc533bc-968a-4496-9986-bc2d6507b107", 
+    "key": "targetserverinstallertmppath", 
+    "name": "Target Server: Installer Tmp Path", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

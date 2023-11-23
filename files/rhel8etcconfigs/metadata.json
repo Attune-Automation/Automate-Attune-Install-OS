@@ -1,0 +1,6 @@
+{
+    "externalUuid4": "322b514d-a34b-434f-ad33-670cd4e970e9", 
+    "key": "rhel8etcconfigs", 
+    "name": "RHEL8 etc Configs", 
+    "type": "com.servertribe.attune.tuples.FileArchiveVersionedTuple"
+}

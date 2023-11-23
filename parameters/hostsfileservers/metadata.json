@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "163384b1-ddcd-4350-b439-e6c88aab9adf", 
+    "key": "hostsfileservers", 
+    "name": "Hosts File Servers", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.ServerList"
+}

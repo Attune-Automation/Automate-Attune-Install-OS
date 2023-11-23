@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": null, 
+    "archiveKey": "adrootcacertificate", 
+    "deployPath": "{targetServerInstallerTmpPath}/cacerts", 
+    "enabled": true, 
+    "externalUuid4": "bcb65902-e2d0-448b-878b-37871f7aa6f1", 
+    "key": "ructdeployrootca", 
+    "name": "RUCT Deploy Root CA", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

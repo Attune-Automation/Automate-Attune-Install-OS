@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "bb3be46e-b126-4f89-b95e-89f8485d89ec", 
+    "interpreter": 1, 
+    "key": "ructinstallrootca", 
+    "name": "RUCT Install Root CA", 
+    "osCredKey": "automationworkerlinuxuserroot", 
+    "serverKey": "automationworkerlinuxnode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

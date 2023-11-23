@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "4c57ff25-b26f-4f36-a13a-cfb8ac40bfd3", 
+    "key": "rpmmirrorappstream", 
+    "name": "RPM Mirror Appstream", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

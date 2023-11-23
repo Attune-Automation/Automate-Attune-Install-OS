@@ -7,12 +7,12 @@
     "key": "addonhypervsupportonlinuxworker", 
     "links": [
         {
-            "order": 0, 
-            "stepKey": "connecttorpmserveronlinuxworkerlink"
+            "order": 50, 
+            "stepKey": "connecttorpmserveronlinuxworker"
         }, 
         {
-            "order": 50, 
-            "stepKey": "installgssntlmssponlinuxworkerlink"
+            "order": 150, 
+            "stepKey": "installgssntlmssponlinuxworker"
         }
     ], 
     "name": "Add-On Hyper-V Support on Linux Worker", 

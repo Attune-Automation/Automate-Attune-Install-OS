@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "d2fb81ad-862c-496c-8bb0-71b5a776be0c", 
+    "key": "rpmmirrorextras", 
+    "name": "RPM Mirror Extras", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}
